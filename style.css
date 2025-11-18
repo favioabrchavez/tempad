@@ -121,9 +121,13 @@ tr:hover {
   outline: 2px solid #ffcc00;
 }
 
-h1[id="current name"] {
-  text-align: left;
+h2 {
+  text-align: center;
 }
+
+h1 {[id="current name"] {
+  text-align: center;
+}}
 
 /* Mantener disposición horizontal */
 @media (max-width: 800px) {
