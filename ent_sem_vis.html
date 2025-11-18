@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tempad</title>
+  <link rel="stylesheet" href="style.css">
+
+<body>
+  <div class="container">
+    <div class="left-panel">
+      <div class="header">
+        <h1 id="current-name">Seleccione</h1>
+      </div>
+
+      <div id="timer">00:00</div>
+
+      <div class="buttons">
+        <button id="start">INICIO</button>
+        <button id="stop">PAUSA</button>
+      </div>
+    </div>
+
+    <div class="right-panel">
+      <table id="schedule">
+        <thead>
+          <tr>
+            <th>Discurso o presentación</th>
+            <th>Minutos</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td contenteditable="true" class="meet">Palabras de introducción</td>
+            <td contenteditable="true" class="meet">1</td>
+          </tr>
+          <tr>
+            <td contenteditable="true" class="tdlb">1. Una esperanza para quien está “cargado de culpa”</td>
+            <td contenteditable="true" class="tdlb">10</td>
+          </tr>
+          <tr>
+            <td contenteditable="true" class="tdlb">2. Busquemos perlas escondidas</td>
+            <td contenteditable="true" class="tdlb">10</td>
+          </tr>
+          <tr>
+            <td contenteditable="true" class="tdlb">3. Lectura de la Biblia</td>
+            <td contenteditable="true" class="tdlb">4</td>
+          </tr>
+          <tr>
+            <td contenteditable="true" class="smm">4. Empiece conversaciones</td>
+            <td contenteditable="true" class="smm">3</td>
+          </tr>
+          <tr>
+            <td contenteditable="true" class="smm">5. Haga revisitas</td>
+            <td contenteditable="true" class="smm">4</td>
+          </tr>
+          <tr>
+            <td contenteditable="true" class="smm">6. Discurso</td>
+            <td contenteditable="true" class="smm">5</td>
+          </tr>
+          <tr>
+           <td contenteditable="true" class="meet">Consejo (reutilizar)</td>
+           <td contenteditable="true" class="meet">1</td>
+          </tr>
+          <tr>
+            <td contenteditable="true" class="nvc">7. <i>Hazte amigo de Jehová: Jehová perdona</i></td>
+            <td contenteditable="true" class="nvc">15</td>
+          </tr>
+          <tr>
+            <td contenteditable="true" class="meet">Palabras de conclusión</td>
+            <td contenteditable="true" class="meet">3</td>
+          </tr>
+          <tr>
+            <td contenteditable="true" class="meet">Discurso de servicio</td>
+            <td contenteditable="true" class="meet">30</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
