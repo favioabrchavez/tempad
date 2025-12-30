@@ -5,6 +5,7 @@ body {
   padding: 0;
 }
 
+
 .container {
   display: flex;
   justify-content: center;
@@ -98,7 +99,7 @@ tr:hover {
 }
 
 .meet {
-  color: black;     
+  color: rgb(50, 50, 50);     
 }
 
 .gray {
@@ -115,6 +116,14 @@ tr:hover {
 
 .nvc {
   color: #bf2f13;
+}
+
+.wm {
+  color: rgb(0, 93, 215);
+}
+
+.w {
+  color: rgb(42, 107, 119);
 }
 
 .meet:focus .tdlb:focus .smm:focus .nvc:focus {
