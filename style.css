@@ -119,11 +119,11 @@ tr:hover {
 }
 
 .tk {
-  color: rgb(0, 93, 215);
+  color: #2878bb;
 }
 
 .w {
-  color: rgb(103, 48, 93);
+  color: #67305d;
 }
 
 .meet:focus .tdlb:focus .smm:focus .nvc:focus {
@@ -166,6 +166,7 @@ h1 {[id="current name"] {
     font-size: 7vw;
   }
 }
+
 
 
 
