@@ -54,13 +54,13 @@ startBtn.addEventListener("click", () => {
 
     // Normal
     if (ratio > 0.1) {
-      timerDisplay.style.background = "#fff";
+      timerDisplay.style.background = "#ffffffff";
       timerDisplay.style.color = "#000";
     }
 
     // Último 10%
     if (ratio <= 0.1 && ratio > 0) {
-      timerDisplay.style.background = "yellow";
+      timerDisplay.style.background = "rgba(255, 196, 0, 1)";
       timerDisplay.style.color = "#000";
     }
 
@@ -114,7 +114,7 @@ soloBtn.addEventListener("click", () => {
   popupWindow.document.write(`
     <html>
       <head>
-        <title>Solo Reloj</title>
+        <title>tempad-view</title>
         <style>
           body {
             margin: 0;
