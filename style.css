@@ -1,28 +1,28 @@
 body {
   font-family: Arial, sans-serif;
-  background: white;
+  background: gainsboro;
   margin: 0;
   padding: 0;
 }
 
+h1 {
+  text-align: center;
+}
 
-.container {
+.contenedor {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   padding: 20px;
-  gap: 20px;
+  gap: 10px;
   width: 100%;
   height: 100vh;
   box-sizing: border-box;
 }
 
 .left-panel, .right-panel {
-  background: #fff;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  flex-grow: 1;
+  background: whitesmoke;
+  padding: 10px;
   min-width: 0;
   overflow: auto;
 }
@@ -40,20 +40,21 @@ body {
 }
 
 #popupBtn {
-  font-size: 14px;
+  font-size: 16px;
   padding: 6px 10px;
   border: 1px solid #000;
   border-radius: 4px;
-  background: white;
+  background: gray;
   cursor: pointer;
 }
 
 #timer {
   font-size: 5vw;
   margin: 20px 0;
+  background-color: whitesmoke;
   font-weight: bold;
   color: #000;
-  transition: color 0.3s;
+  transition: color 0s;
 }
 
 .buttons {
@@ -68,13 +69,14 @@ button {
   padding: 10px 20px;
   border: 2px solid transparent;
   border-radius: 4px;
-  background-color: gray;
+  background-color: dimgray;
   color: white;
   cursor: pointer;
 }
 
 button.active {
-  border: 2px solid #000;
+  border: 3px solid ;
+  border-color: black;
 }
 
 table {
@@ -126,17 +128,9 @@ tr:hover {
   color: #67305d;
 }
 
-.meet:focus .tdlb:focus .smm:focus .nvc:focus {
-  outline: 2px solid #ffcc00;
-}
-
 h2 {
   text-align: center;
 }
-
-h1 {[id="current name"] {
-  text-align: center;
-}}
 
 /* Mantener disposición horizontal */
 @media (max-width: 800px) {
@@ -166,7 +160,6 @@ h1 {[id="current name"] {
     font-size: 7vw;
   }
 }
-
 
 
 
