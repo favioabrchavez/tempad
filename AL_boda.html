@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tempad</title>
+  <link rel="stylesheet" href="style.css">
+
+<body>
+  <div class="contenedor">
+    <div class="left-panel">
+      <div class="header">
+        <h1 id="current-name">Consejo matrimonial</h1>
+      </div>
+
+      <div id="timer">00:00</div>
+
+      <div class="buttons">
+        <button id="start">INICIO</button>
+        <button id="stop">PAUSA</button>
+      </div>
+
+      <table class="time-table">
+        <tbody>
+        <tr>
+          <td>Inicio</td>
+          <td id="start-time">--:--</td>
+        </tr>
+        <tr>
+          <td>Fin</td>
+          <td id="end-time">--:--</td>
+        </tr>
+      </tbody>
+      </table>
+
+      <div class="adjust-time">
+        <button id="minus-time">-</button>
+          <span>-----</span>
+        <button id="plus-time">+</button>
+      </div>
+
+    </div>
+
+    <div class="right-panel">
+      <table id="schedule">
+        <thead>
+          <tr>
+            <th>Discurso</th>
+            <th>Minutos</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="tk">Un matrimonio honorable a la vista de Dios</td>
+            <td contenteditable="true" class="tk">30</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
