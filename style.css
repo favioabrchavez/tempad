@@ -1,0 +1,219 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+   ========================= */
+body {
+  font-family: Arial, sans-serif;
+  background: gainsboro;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+
+/* =========================
+   ESTRUCTURA PRINCIPAL
+   ========================= */
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 20px;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.left-panel,
+.right-panel {
+  background: whitesmoke;
+  padding: 10px;
+  overflow: auto;
+}
+
+/* Panel izquierdo (cronómetro) */
+.left-panel {
+  flex-basis: 40%;
+  text-align: center;
+}
+
+/* =========================
+   CRONÓMETRO
+   ========================= */
+
+#timer {
+  font-size: 5vw;
+  margin: 20px 0;
+  font-weight: bold;
+  color: #000;
+  background: #fff;
+}
+
+/* =========================
+   TABLA DE CONTROL DE TIEMPO
+   ========================= */
+/* NOTA:
+   Muestra la hora real de inicio
+   y la hora estimada de fin.
+   Está pensada como panel de control,
+   no como elemento principal.
+*/
+.time-table {
+  margin: 15px auto 0;
+  border-collapse: collapse;
+  font-size: 2rem;
+  min-width: 200px;
+}
+
+.time-table td {
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+}
+
+.time-table td:first-child {
+  font-weight: bold;
+  background: #f5f5f5;
+  width: 50%;
+}
+
+/* =========================
+   AJUSTE MANUAL DE TIEMPO
+   ========================= */
+/* NOTA:
+   Permite sumar o restar tiempo
+   durante la asignación (uso en vivo)
+*/
+.adjust-time {
+  margin-top: 12px;
+}
+
+.time-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.time-table th,
+.time-table td {
+  border: 1px solid #ccc;
+  padding: 6px;
+  text-align: center;
+}
+
+.time-table input[type="time"] {
+  width: 100%;
+  font-size: 1rem;
+}
+
+span {
+  color: #f9f9f9;
+}
+
+
+/* =========================
+   BOTONES
+   ========================= */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+button {
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  background-color: dimgray;
+  color: white;
+  cursor: pointer;
+}
+
+button.active {
+  border: 3px solid black;
+}
+
+/* =========================
+   TABLA DE PROGRAMA
+   ========================= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+tr:hover {
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+
+/* Tesoros de la Biblia */
+.tdlb {
+  color: #2596be;
+}
+
+/* Seamos Mejores Maestros */
+.smm {
+  color: #d68f00;
+}
+
+/* Vida y Ministerio Cristiano */
+.nvc {
+  color: #bf2f13;
+}
+
+/* Discurso público */
+.tk {
+  color: #2878bb;
+}
+
+/* Estudio de La Atalaya
+   👉 CAMBIA ESTE COLOR CUANDO CAMBIE LA REVISTA
+*/
+.w {
+  color: #937A59;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+@media (max-width: 800px) {
+  .contenedor {
+    flex-wrap: nowrap;
+  }
+
+  .left-panel,
+  .right-panel {
+    flex-basis: 50%;
+  }
+
+  #timer {
+    font-size: 6vw;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #timer {
+    font-size: 7vw;
+  }
+}

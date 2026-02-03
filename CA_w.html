@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tempad</title>
+  <link rel="stylesheet" href="style.css">
+
+<body>
+  <div class="contenedor">
+    <div class="left-panel">
+      <div class="header">
+        <h1 id="current-name"></h1>
+      </div>
+
+      <div id="timer">00:00</div>
+
+      <div class="buttons">
+        <button id="start">INICIO</button>
+        <button id="stop">PAUSA</button>
+      </div>
+
+      <table class="time-table">
+        <tbody>
+        <tr>
+          <td>Inicio</td>
+          <td id="start-time">--:--</td>
+        </tr>
+        <tr>
+          <td>Fin</td>
+          <td id="end-time">--:--</td>
+        </tr>
+      </tbody>
+      </table>
+
+      <div class="adjust-time">
+        <button id="minus-time">-</button>
+          <span>-----</span>
+        <button id="plus-time">+</button>
+      </div>
+
+    </div>
+
+    <div class="right-panel">
+      <table id="schedule">
+        <thead>
+          <tr>
+            <th>Discurso o presentación</th>
+            <th>Minutos</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>NOTA <br>El recuadro de canción y discurso son editables</td>
+          </tr>
+          <tr>
+            <td>Canción 000 <b><i>Título</i></b></td>
+          </tr>
+          <tr>
+            <td class="tk"><b>Orador:</b> Título</td>
+            <td contenteditable="true" class="tk">30</td>
+          </tr>
+          <tr>
+            <td>Canción 129 <b><i>Servimos con aguante</i></b></td>
+          </tr>
+          <tr>
+           <td class="w"><b>Estudio de <i>La Atalaya</i></b>: Cómo nos ayuda el libro de Job cuando estamos sufriendo</td>
+           <td contenteditable="true" class="w">60</td>
+          </tr>
+          <tr>
+            <td>Canción 156 <b><i>Si tienes fe</i></b></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
