@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tempad</title>
+  <link rel="stylesheet" href="style.css">
+
+<body>
+  <div class="contenedor">
+    <div class="left-panel">
+      <div class="header">
+        <h1 id="current-name">10 feb<br>07:00 p. m.</h1>
+      </div>
+
+      <div id="timer">00:00</div>
+
+      <div class="buttons">
+        <button id="start">INICIO</button>
+        <button id="stop">PAUSA</button>
+      </div>
+
+      <table class="time-table">
+        <tbody>
+        <tr>
+          <td>Inicio</td>
+          <td id="start-time">--:--</td>
+        </tr>
+        <tr>
+          <td>Fin</td>
+          <td id="end-time">--:--</td>
+        </tr>
+      </tbody>
+      </table>
+
+      <div class="adjust-time">
+        <button id="minus-time">-</button>
+          <span>-----</span>
+        <button id="plus-time">+</button>
+      </div>
+
+    </div>
+
+    <div class="right-panel">
+      <table id="schedule">
+        <thead>
+          <tr>
+            <th>Discurso</th>
+            <th>Mins.</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Canción 3 <b><i>Tú me das fuerza, confianza y valor</i></b></td>
+          </tr>
+          <tr>
+            <td>Palabras de introducción</td>
+            <td contenteditable="true" class="meet">1</td>
+          </tr>
+          <tr>
+            <td class="tdlb">1. “Él es la estabilidad de tus tiempos”</td>
+            <td contenteditable="true" class="tdlb">10</td>
+          </tr>
+          <tr>
+            <td class="tdlb">2. Busquemos perlas escondidas</td>
+            <td contenteditable="true" class="tdlb">10</td>
+          </tr>
+          <tr>
+            <td class="tdlb">3. Lectura de la Biblia</td>
+            <td contenteditable="true" class="tdlb">4</td>
+          </tr>
+          <tr>
+            <td class="smm">4. Empiece conversaciones</td>
+            <td contenteditable="true" class="smm">3</td>
+          </tr>
+          <tr>
+            <td class="smm">5. Haga revisitas</td>
+            <td contenteditable="true" class="smm">4</td>
+          </tr>
+          <tr>
+            <td class="smm">6. Discurso</td>
+            <td contenteditable="true" class="smm">5</td>
+          </tr>
+          <tr>
+            <td class="meet">Consejo</td>
+            <td contenteditable="true" class="meet">1</td>
+          </tr>
+          <tr>
+            <td>Canción 41 <b><i>Padre, escucha mi oración</i></b></td>
+          </tr>
+          <tr>
+            <td class="nvc">7. Necesidades de la congregación<br><i>2026 | Informe 1 del Cuerpo Gobernante</i></td>
+            <td contenteditable="true" class="nvc">15</td>
+          </tr>
+          <tr>
+            <td class="meet">Palabras de conclusión</td>
+            <td contenteditable="true" class="meet">3</td>
+          </tr>
+          <tr>
+            <td class="tk"><b>Jorge Visurraga:</b> El amor: un lazo de unión perfecto</td>
+            <td contenteditable="true" class="tk">30</td>
+          </tr>
+          <tr>
+            <td>Canción 154 <b><i>Un amor sin final</i></b></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
