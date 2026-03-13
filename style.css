@@ -16,7 +16,6 @@ h3 {
   text-align: center;
 }
 
-
 /* =========================
    ESTRUCTURA PRINCIPAL
    ========================= */
@@ -47,7 +46,6 @@ h3 {
 /* =========================
    CRONÓMETRO
    ========================= */
-
 #timer {
   font-size: 5vw;
   margin: 20px 0;
@@ -59,15 +57,10 @@ h3 {
 /* =========================
    TABLA DE CONTROL DE TIEMPO
    ========================= */
-/* NOTA:
-   Muestra la hora real de inicio
-   y la hora estimada de fin.
-   Está pensada como panel de control,
-   no como elemento principal.
-*/
 .time-table {
-  margin: 15px auto 0;
+  width: 100%;
   border-collapse: collapse;
+  margin-top: 10px;
   font-size: 2rem;
   min-width: 200px;
 }
@@ -75,6 +68,7 @@ h3 {
 .time-table td {
   border: 1px solid #ccc;
   padding: 6px 10px;
+  text-align: center;
 }
 
 .time-table td:first-child {
@@ -86,36 +80,13 @@ h3 {
 /* =========================
    AJUSTE MANUAL DE TIEMPO
    ========================= */
-/* NOTA:
-   Permite sumar o restar tiempo
-   durante la asignación (uso en vivo)
-*/
 .adjust-time {
   margin-top: 12px;
-}
-
-.time-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 10px;
-}
-
-.time-table th,
-.time-table td {
-  border: 1px solid #ccc;
-  padding: 6px;
-  text-align: center;
-}
-
-.time-table input[type="time"] {
-  width: 100%;
-  font-size: 1rem;
 }
 
 span {
   color: #f9f9f9;
 }
-
 
 /* =========================
    BOTONES
@@ -162,6 +133,9 @@ tr:hover {
   cursor: pointer;
 }
 
+tr.selected {
+  background-color: #e0f0ff;
+}
 
 /* Tesoros de la Biblia */
 .tdlb {
@@ -178,7 +152,7 @@ tr:hover {
   color: #bf2f13;
 }
 
-/* Discurso público */
+/* Discurso público / presentaciones */
 .tk {
   color: #2878bb;
 }
@@ -187,7 +161,12 @@ tr:hover {
    👉 CAMBIA ESTE COLOR CUANDO CAMBIE LA REVISTA
 */
 .w {
-  color: #04806f;
+  color: #B47119;
+}
+
+/* Introducción / conclusión / consejo (neutral) */
+.intro {
+  color: inherit;
 }
 
 /* =========================

@@ -10,77 +10,64 @@
    REFERENCIAS AL DOM
    ========================= */
 const timerDisplay = document.getElementById("timer");
-const currentName = document.getElementById("current-name");
-
-const startBtn = document.getElementById("start");
-const stopBtn = document.getElementById("stop");
-
-const rows = document.querySelectorAll("#schedule tbody tr");
-
-// Tabla de control (inicio / fin)
-const startTimeEl = document.getElementById("start-time");
-const endTimeEl = document.getElementById("end-time");
-
-// Botones de ajuste manual
-const plusBtn = document.getElementById("plus-time");
-const minusBtn = document.getElementById("minus-time");
+const currentName  = document.getElementById("current-name");
+const startBtn     = document.getElementById("start");
+const stopBtn      = document.getElementById("stop");
+const startTimeEl  = document.getElementById("start-time");
+const endTimeEl    = document.getElementById("end-time");
+const plusMinBtn   = document.getElementById("plus-min");
+const minusMinBtn  = document.getElementById("minus-min");
+const plusSecBtn   = document.getElementById("plus-sec");
+const minusSecBtn  = document.getElementById("minus-sec");
 
 /* =========================
    VARIABLES DE CONTROL
    ========================= */
-let totalSeconds = 0;         // Duración total de la asignación
-let remainingSeconds = 0;     // Tiempo restante calculado
-let timer = null;             // Intervalo activo
+let totalSeconds     = 0;
+let remainingSeconds = 0;
+let timer            = null;
+let startTimestamp   = null;
+let endTimestamp     = null;
+let popupWindow      = null;
 
-// Timestamps reales (milisegundos)
-let startTimestamp = null;    // Hora real de inicio
-let endTimestamp = null;      // Hora real de fin
-
-// Ventana secundaria
-let popupWindow = null;
-
-// Paso de ajuste manual (segundos)
-const ADJUST_STEP = 60; // 1 minuto
+const ADJUST_MIN = 60;  // 1 minuto
+const ADJUST_SEC = 10;  // base para snap
 
 /* =====================================================
-   SELECCIÓN DE ASIGNACIÓN
+   INICIALIZAR FILAS (llamar después de generarlas)
    ===================================================== */
-rows.forEach(row => {
-  row.addEventListener("click", () => {
-    // Marcar fila seleccionada
-    rows.forEach(r => r.classList.remove("selected"));
-    row.classList.add("selected");
+function initRows() {
+  const rows = document.querySelectorAll("#schedule tbody tr");
 
-    const name = row.cells[0].innerText.trim();
-    const minutes = parseInt(row.cells[1].innerText.trim());
+  rows.forEach(row => {
+    row.addEventListener("click", () => {
+      rows.forEach(r => r.classList.remove("selected"));
+      row.classList.add("selected");
 
-    if (isNaN(minutes) || minutes <= 0) {
-      alert("Por favor ingresa un número válido de minutos.");
-      return;
-    }
+      const name    = row.cells[0]?.innerText.trim();
+      const minutes = parseInt(row.cells[1]?.innerText.trim());
 
-    // Datos base
-    currentName.innerText = name;
-    totalSeconds = minutes * 60;
-    remainingSeconds = totalSeconds;
+      if (isNaN(minutes) || minutes <= 0) return;
 
-    // Reset de estado
-    startTimestamp = null;
-    endTimestamp = null;
+      currentName.innerText = name;
+      totalSeconds     = minutes * 60;
+      remainingSeconds = totalSeconds;
 
-    startTimeEl.innerText = "--:--";
-    endTimeEl.innerText = "--:--";
+      startTimestamp = null;
+      endTimestamp   = null;
+      startTimeEl.innerText = "--:--";
+      endTimeEl.innerText   = "--:--";
 
-    updateDisplay();
+      updateDisplay();
+      timerDisplay.style.background = "#fff";
+      timerDisplay.style.color      = "#000";
 
-    timerDisplay.style.background = "#fff";
-    timerDisplay.style.color = "#000";
-
-    clearInterval(timer);
-    startBtn.classList.remove("active");
-    stopBtn.classList.remove("active");
+      clearInterval(timer);
+      startBtn.classList.remove("active");
+      stopBtn.classList.remove("active");
+    });
   });
-});
+}
 
 /* =====================================================
    BOTÓN INICIO
@@ -90,13 +77,11 @@ startBtn.addEventListener("click", () => {
 
   const now = Date.now();
 
-  // Se define solo la primera vez
   if (!startTimestamp) {
     startTimestamp = now;
-    endTimestamp = startTimestamp + totalSeconds * 1000;
-
+    endTimestamp   = startTimestamp + totalSeconds * 1000;
     startTimeEl.innerText = formatClock(startTimestamp);
-    endTimeEl.innerText = formatClock(endTimestamp);
+    endTimeEl.innerText   = formatClock(endTimestamp);
   }
 
   startBtn.classList.add("active");
@@ -116,59 +101,59 @@ stopBtn.addEventListener("click", () => {
 });
 
 /* =====================================================
-   AJUSTE MANUAL DE TIEMPO (+ / -)
-   =====================================================
-   Permite recortar o extender tiempo en vivo
-*/
+   AJUSTE MANUAL DE TIEMPO
+   ===================================================== */
 function adjustTime(seconds) {
   if (!endTimestamp) return;
-
-  endTimestamp += seconds * 1000;
-  remainingSeconds = Math.round((endTimestamp - Date.now()) / 1000);
-
+  endTimestamp     += seconds * 1000;
+  remainingSeconds  = Math.round((endTimestamp - Date.now()) / 1000);
   endTimeEl.innerText = formatClock(endTimestamp);
   updateDisplay();
 }
 
-plusBtn.addEventListener("click", () => {
-  adjustTime(ADJUST_STEP);
-});
+// Snap al múltiplo de 10s más cercano en la dirección indicada
+function adjustSnap(direction) {
+  if (!endTimestamp) return;
+  const current = Math.round((endTimestamp - Date.now()) / 1000);
+  const mod = current % ADJUST_SEC;
+  let delta;
+  if (direction > 0) {
+    delta = mod === 0 ? ADJUST_SEC : ADJUST_SEC - mod;
+  } else {
+    delta = mod === 0 ? -ADJUST_SEC : -mod;
+  }
+  adjustTime(delta);
+}
 
-minusBtn.addEventListener("click", () => {
-  adjustTime(-ADJUST_STEP);
-});
+plusMinBtn.addEventListener("click",  () => adjustTime( ADJUST_MIN));
+minusMinBtn.addEventListener("click", () => adjustTime(-ADJUST_MIN));
+plusSecBtn.addEventListener("click",  () => adjustSnap(+1));
+minusSecBtn.addEventListener("click", () => adjustSnap(-1));
 
 /* =====================================================
    ACTUALIZACIÓN DESDE RELOJ REAL
    ===================================================== */
 function updateFromClock() {
-  const now = Date.now();
-  remainingSeconds = Math.round((endTimestamp - now) / 1000);
+  remainingSeconds = Math.round((endTimestamp - Date.now()) / 1000);
   updateDisplay();
 
   const ratio = remainingSeconds / totalSeconds;
 
-  // Estado normal
   if (ratio > 0.1) {
     timerDisplay.style.background = "#fff";
-    timerDisplay.style.color = "#000";
-  }
-  // Último 10%
-  else if (ratio > 0) {
+    timerDisplay.style.color      = "#000";
+  } else if (ratio > 0) {
     timerDisplay.style.background = "rgba(255, 196, 0, 1)";
-    timerDisplay.style.color = "#000";
-  }
-  // Tiempo excedido
-  else {
+    timerDisplay.style.color      = "#000";
+  } else {
     timerDisplay.style.background = "red";
-    timerDisplay.style.color = "#fff";
+    timerDisplay.style.color      = "#fff";
   }
 
-  // Sincronizar ventana secundaria
   if (popupWindow && !popupWindow.closed) {
     popupWindow.postMessage({
-      time: timerDisplay.innerText,
-      color: timerDisplay.style.color,
+      time:       timerDisplay.innerText,
+      color:      timerDisplay.style.color,
       background: timerDisplay.style.background
     }, "*");
   }
@@ -179,10 +164,9 @@ function updateFromClock() {
    ===================================================== */
 function updateDisplay() {
   const absSeconds = Math.abs(remainingSeconds);
-  const minutes = Math.floor(absSeconds / 60);
-  const seconds = absSeconds % 60;
-  const sign = remainingSeconds < 0 ? "-" : "";
-
+  const minutes    = Math.floor(absSeconds / 60);
+  const seconds    = absSeconds % 60;
+  const sign       = remainingSeconds < 0 ? "-" : "";
   timerDisplay.innerText =
     `${sign}${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
 }
@@ -191,9 +175,8 @@ function updateDisplay() {
    FORMATO DE HORA REAL (HH:MM:SS)
    ===================================================== */
 function formatClock(timestamp) {
-  const d = new Date(timestamp);
-  return d.toLocaleTimeString([], {
-    hour: "2-digit",
+  return new Date(timestamp).toLocaleTimeString([], {
+    hour:   "2-digit",
     minute: "2-digit",
     second: "2-digit"
   });
@@ -240,14 +223,14 @@ soloBtn.addEventListener("click", () => {
         <script>
           window.addEventListener("message", (event) => {
             const data = event.data;
-            const el = document.getElementById("popup-timer");
+            const el   = document.getElementById("popup-timer");
             if (data.time) {
               el.innerText = data.time;
               el.style.color = data.color || "#000";
               document.body.style.background = data.background || "#fff";
             }
           });
-        </script>
+        <\/script>
       </body>
     </html>
   `);
