@@ -130,24 +130,24 @@ const TEMPAD_DATA = {
   CA: {
     nombre: "California",
     mwb: {
-      fecha: "06 mar",
+      fecha: "13 mar",
       hora: "07:00 p. m.",
       programa: [
-        { tipo: "cancion", texto: "Canción 8 <b><i>Jehová es mi Refugio</i></b>" },
+        { tipo: "cancion", texto: "Canción 63 <b><i>¡Soy testigo de Jehová!</i></b>" },
         { tipo: "intro", texto: "Palabras de introducción", mins: 1 },
         { tipo: "tdlb", texto: '1. "No tengas miedo"', mins: 10 },
         { tipo: "tdlb", texto: "2. Busquemos perlas escondidas", mins: 10 },
         { tipo: "tdlb", texto: "3. Lectura de la Biblia", mins: 4 },
-        { tipo: "smm", texto: "4. Empiece conversaciones", mins: 3 },
-        { tipo: "smm", texto: "5. Empiece conversaciones", mins: 4 },
-        { tipo: "smm", texto: "6. Explique sus creencias", mins: 5 },
+        { tipo: "smm", texto: "4. Empiece conversaciones", mins: 1 },
+        { tipo: "smm", texto: "5. Empiece conversaciones", mins: 3 },
+        { tipo: "smm", texto: "6. Explique sus creencias", mins: 3 },
+         { tipo: "smm", texto: "7. Haga revisitas", mins: 4 },
         { tipo: "intro", texto: "Consejo", mins: 1 },
-        { tipo: "cancion", texto: "Canción 19 <b><i>La Cena del Señor</i></b>" },
-        { tipo: "nvc", texto: "7. El sábado 7 de marzo comienza la campaña de la Conmemoración", mins: 15 },
-        { tipo: "nvc", texto: "8. <i>Logros de la organización</i> para el mes de marzo", mins: 15 },
+        { tipo: "cancion", texto: "Canción 69 <b><i>Prediquen las nuevas del Reino</i></b>" },
+        { tipo: "nvc", texto: "8. Necesidades de la congregación", mins: 15 },
         { tipo: "nvc", texto: "9. Estudio bíblico de la congregación", mins: 30 },
         { tipo: "intro", texto: "Palabras de conclusión", mins: 3 },
-        { tipo: "cancion", texto: "Canción 110 <b><i>El gozo de Jehová</i></b>" }
+        { tipo: "cancion", texto: "Canción 137 <b><i>Fieles, valiosas, amadas</i></b>" }
       ]
     },
     w: {
@@ -161,35 +161,3 @@ const TEMPAD_DATA = {
         { tipo: "cancion", texto: "Canción 162 <b><i>Mi necesidad espiritual</i></b>" }
       ]
     },
-    esm: {
-      fecha: "13 feb",
-      hora: "07:30 p. m.",
-      programa: [
-        { tipo: "tk", texto: "<b>Jorge Visurraga:</b> Fortalezcan los lazos de amor en la congregación", mins: 45 }
-      ]
-    },
-    pr: {
-      fecha: "11 feb",
-      hora: "05:30 p. m.",
-      programa: [
-        { tipo: "tk", texto: "<b>Jorge Visurraga:</b> Cómo ayudan los precursores a fortalecer los lazos de amor en la congregación", mins: 45 },
-        { tipo: "", texto: "Tiempo restante para abandonar el salón del Reino (6:30 p. m.)", mins: 30 }
-      ]
-    }
-  },
-
-  /* ─────────────────────────────────────────
-     OTROS / ASAMBLEAS LOCALES (AL)
-  ───────────────────────────────────────── */
-  AL: {
-    nombre: "Otros",
-    boda: {
-      fecha: "Consejo matrimonial",
-      hora: "",
-      programa: [
-        { tipo: "tk", texto: "Un matrimonio honorable a la vista de Dios", mins: 30 }
-      ]
-    }
-  }
-
-};
