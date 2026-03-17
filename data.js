@@ -12,35 +12,35 @@ const TEMPAD_DATA = {
   VH: {
     nombre: "Vista Hermosa",
     mwb: {
-      fecha: "10 mar",
+      fecha: "17 mar",
       hora: "07:00 p. m.",
       programa: [
-        { tipo: "cancion", texto: "Canción 63 <b><i>¡Soy testigo de Jehová!</i></b>" },
-        { tipo: "intro",   texto: "Palabras de introducción", mins: 1 },
-        { tipo: "tdlb",    texto: "1. Una profecía escrita dos siglos antes de su cumplimiento", mins: 10 },
+        { tipo: "extra", texto: "♫ 2 <b><i>Tu nombre es Jehová</i></b>" },
+        { tipo: "extra",   texto: "Palabras de introducción", mins: 1 },
+        { tipo: "tdlb",    texto: "1. “Yo soy Dios, y no hay nadie como yo”", mins: 10 },
         { tipo: "tdlb",    texto: "2. Busquemos perlas escondidas", mins: 10 },
         { tipo: "tdlb",    texto: "3. Lectura de la Biblia", mins: 4 },
-        { tipo: "smm",     texto: "4. Empiece conversaciones", mins: 1 },
-        { tipo: "smm",     texto: "5. Empiece conversaciones", mins: 3 },
-        { tipo: "smm",     texto: "6. Empiece conversaciones", mins: 3 },
-        { tipo: "smm",     texto: "7. Haga revisitas", mins: 4 },
-        { tipo: "intro",   texto: "Consejo", mins: 1 },
-        { tipo: "cancion", texto: "Canción 69 <b><i>Prediquen las nuevas del Reino</i></b>" },
-        { tipo: "nvc",     texto: "8. Necesidades de la congregación", mins: 15 },
+        { tipo: "smm",     texto: "4. Empiece conversaciones", mins: 3 },
+        { tipo: "smm",     texto: "5. Haga revisitas", mins: 4 },
+        { tipo: "smm",     texto: "6. Haga díscípulos", mins: 5 },
+        { tipo: "extra",   texto: "Consejo", mins: 1 },
+        { tipo: "extra", texto: "♫ 38 <b><i>Jehová te cuidará</i></b>" },
+        { tipo: "nvc",     texto: "7. Jehová es el único que siempre nos puede ayudar", mins: 7 },
+        { tipo: "nvc",     texto: "8. 2026 | <i>Informe sobre la actividad del Departamento Local de Diseño y Construcción<i>", mins: 8 },
         { tipo: "nvc",     texto: "9. Estudio bíblico de la congregación", mins: 30 },
-        { tipo: "intro",   texto: "Palabras de conclusión", mins: 3 },
-        { tipo: "cancion", texto: "Canción 137 <b><i>Fieles, valiosas, amadas</i></b>" }
+        { tipo: "extra",   texto: "Palabras de conclusión", mins: 3 },
+        { tipo: "extra", texto: "♫ 148 <b><i>Jehová es mi Roca de salvación</i></b>" }
       ]
     },
     w: {
-      fecha: "15 mar",
+      fecha: "21 mar",
       hora: "6:00 p. m.",
       programa: [
-        { tipo: "cancion", texto: "Canción 000 <b><i>---</i></b>" },
-        { tipo: "tk",      texto: "<b>Orador:</b> Título (000)", mins: 30, editable: true },
-        { tipo: "cancion", texto: "Canción 45 <b><i>La meditación de mi corazón</i></b>" },
-        { tipo: "w",       texto: "<b>Estudio de <i>La Atalaya</i></b>: Cómo vencer los sentimientos negativos", mins: 60 },
-        { tipo: "cancion", texto: "Canción 34 <b><i>Caminaré en integridad</i></b>" }
+        { tipo: "extra", texto: "♫ 000 <b><i>---</i></b>", editable: true },
+        { tipo: "tk",      texto: "<b>Renzo Chávez:</b> El mundo que nos rodea prueba que Dios existe (4)", mins: 30, editable: true },
+        { tipo: "extra", texto: "♫ 20 <b><i>Enviaste a Jesús, tu Hijo amado</i></b>" },
+        { tipo: "w",       texto: "<b>Estudio de <i>La Atalaya</i></b>: Por qué necesitamos el rescate", mins: 60 },
+        { tipo: "extra", texto: "♫ 19 <b><i>La Cena del Señor</i></b>" }
       ]
     }
   },
@@ -51,35 +51,35 @@ const TEMPAD_DATA = {
   VA: {
     nombre: "Vista Alegre",
     mwb: {
-      fecha: "11 mar",
+      fecha: "18 mar",
       hora: "07:00 p. m.",
       programa: [
-        { tipo: "cancion", texto: "Canción 63 <b><i>¡Soy testigo de Jehová!</i></b>" },
-        { tipo: "intro",   texto: "Palabras de introducción", mins: 1 },
-        { tipo: "tdlb",    texto: "1. Una profecía escrita dos siglos antes de su cumplimiento", mins: 10 },
+        { tipo: "extra", texto: "♫ 2 <b><i>Tu nombre es Jehová</i></b>" },
+        { tipo: "extra",   texto: "Palabras de introducción", mins: 1 },
+        { tipo: "tdlb",    texto: "1. “Yo soy Dios, y no hay nadie como yo”", mins: 10 },
         { tipo: "tdlb",    texto: "2. Busquemos perlas escondidas", mins: 10 },
         { tipo: "tdlb",    texto: "3. Lectura de la Biblia", mins: 4 },
-        { tipo: "smm",     texto: "4. Empiece conversaciones", mins: 1 },
-        { tipo: "smm",     texto: "5. Empiece conversaciones", mins: 3 },
-        { tipo: "smm",     texto: "6. Empiece conversaciones", mins: 3 },
-        { tipo: "smm",     texto: "7. Haga revisitas", mins: 4 },
-        { tipo: "intro",   texto: "Consejo", mins: 1 },
-        { tipo: "cancion", texto: "Canción 69 <b><i>Prediquen las nuevas del Reino</i></b>" },
-        { tipo: "nvc",     texto: "8. Necesidades de la congregación", mins: 15 },
+        { tipo: "smm",     texto: "4. Empiece conversaciones", mins: 3 },
+        { tipo: "smm",     texto: "5. Haga revisitas", mins: 4 },
+        { tipo: "smm",     texto: "6. Haga díscípulos", mins: 5 },
+        { tipo: "extra",   texto: "Consejo", mins: 1 },
+        { tipo: "extra", texto: "♫ 38 <b><i>Jehová te cuidará</i></b>" },
+        { tipo: "nvc",     texto: "7. Jehová es el único que siempre nos puede ayudar", mins: 7 },
+        { tipo: "nvc",     texto: "8. 2026 | <i>Informe sobre la actividad del Departamento Local de Diseño y Construcción<i>", mins: 8 },
         { tipo: "nvc",     texto: "9. Estudio bíblico de la congregación", mins: 30 },
-        { tipo: "intro",   texto: "Palabras de conclusión", mins: 3 },
-        { tipo: "cancion", texto: "Canción 137 <b><i>Fieles, valiosas, amadas</i></b>" }
+        { tipo: "extra",   texto: "Palabras de conclusión", mins: 3 },
+        { tipo: "extra", texto: "♫ 148 <b><i>Jehová es mi Roca de salvación</i></b>" }
       ]
     },
     w: {
-      fecha: "15 mar",
+      fecha: "22 mar",
       hora: "10:00 a. m.",
       programa: [
-        { tipo: "cancion", texto: "Canción 000 <b><i>---</i></b>" },
-        { tipo: "tk",      texto: "<b>Orador:</b> Título (000)", mins: 30, editable: true },
-        { tipo: "cancion", texto: "Canción 45 <b><i>La meditación de mi corazón</i></b>" },
-        { tipo: "w",       texto: "<b>Estudio de <i>La Atalaya</i></b>: Cómo vencer los sentimientos negativos", mins: 60 },
-        { tipo: "cancion", texto: "Canción 34 <b><i>Caminaré en integridad</i></b>" }
+        { tipo: "extra", texto: "♫ 000 <b><i>---</i></b>", editable: true },
+        { tipo: "tk",      texto: "<b>Aníbal Daga:</b> Actuemos con sabiduría en este mundo insensato (167)", mins: 30, editable: true },
+        { tipo: "extra", texto: "♫ 20 <b><i>Enviaste a Jesús, tu Hijo amado</i></b>" },
+        { tipo: "w",       texto: "<b>Estudio de <i>La Atalaya</i></b>: Por qué necesitamos el rescate", mins: 60 },
+        { tipo: "extra", texto: "♫ 19 <b><i>La Cena del Señor</i></b>" }
       ]
     }
   },
@@ -90,35 +90,35 @@ const TEMPAD_DATA = {
   BA: {
     nombre: "Buenos Aires",
     mwb: {
-      fecha: "12 mar",
+      fecha: "19 mar",
       hora: "07:00 p. m.",
       programa: [
-        { tipo: "cancion", texto: "Canción 63 <b><i>¡Soy testigo de Jehová!</i></b>" },
-        { tipo: "intro",   texto: "Palabras de introducción", mins: 1 },
-        { tipo: "tdlb",    texto: "1. Una profecía escrita dos siglos antes de su cumplimiento", mins: 10 },
+        { tipo: "extra", texto: "♫ 2 <b><i>Tu nombre es Jehová</i></b>" },
+        { tipo: "extra",   texto: "Palabras de introducción", mins: 1 },
+        { tipo: "tdlb",    texto: "1. “Yo soy Dios, y no hay nadie como yo”", mins: 10 },
         { tipo: "tdlb",    texto: "2. Busquemos perlas escondidas", mins: 10 },
         { tipo: "tdlb",    texto: "3. Lectura de la Biblia", mins: 4 },
-        { tipo: "smm",     texto: "4. Empiece conversaciones", mins: 1 },
-        { tipo: "smm",     texto: "5. Empiece conversaciones", mins: 3 },
-        { tipo: "smm",     texto: "6. Empiece conversaciones", mins: 3 },
-        { tipo: "smm",     texto: "7. Haga revisitas", mins: 4 },
-        { tipo: "intro",   texto: "Consejo", mins: 1 },
-        { tipo: "cancion", texto: "Canción 69 <b><i>Prediquen las nuevas del Reino</i></b>" },
-        { tipo: "nvc",     texto: "8. Necesidades de la congregación", mins: 15 },
+        { tipo: "smm",     texto: "4. Empiece conversaciones", mins: 3 },
+        { tipo: "smm",     texto: "5. Haga revisitas", mins: 4 },
+        { tipo: "smm",     texto: "6. Haga díscípulos", mins: 5 },
+        { tipo: "extra",   texto: "Consejo", mins: 1 },
+        { tipo: "extra", texto: "♫ 38 <b><i>Jehová te cuidará</i></b>" },
+        { tipo: "nvc",     texto: "7. Jehová es el único que siempre nos puede ayudar", mins: 7 },
+        { tipo: "nvc",     texto: "8. 2026 | <i>Informe sobre la actividad del Departamento Local de Diseño y Construcción<i>", mins: 8 },
         { tipo: "nvc",     texto: "9. Estudio bíblico de la congregación", mins: 30 },
-        { tipo: "intro",   texto: "Palabras de conclusión", mins: 3 },
-        { tipo: "cancion", texto: "Canción 137 <b><i>Fieles, valiosas, amadas</i></b>" }
+        { tipo: "extra",   texto: "Palabras de conclusión", mins: 3 },
+        { tipo: "extra", texto: "♫ 148 <b><i>Jehová es mi Roca de salvación</i></b>" }
       ]
     },
     w: {
-      fecha: "15 mar",
+      fecha: "22 mar",
       hora: "4:00 p. m.",
       programa: [
-        { tipo: "cancion", texto: "Canción 000 <b><i>---</i></b>" },
-        { tipo: "tk",      texto: "<b>Orador:</b> Título (000)", mins: 30, editable: true },
-        { tipo: "cancion", texto: "Canción 45 <b><i>La meditación de mi corazón</i></b>" },
-        { tipo: "w",       texto: "<b>Estudio de <i>La Atalaya</i></b>: Cómo vencer los sentimientos negativos", mins: 60 },
-        { tipo: "cancion", texto: "Canción 34 <b><i>Caminaré en integridad</i></b>" }
+        { tipo: "extra", texto: "♫ 000 <b><i>---</i></b>", editable: true },
+        { tipo: "tk",      texto: "<b>Ricardo Otiniano:</b> ¿A quién podemos acudir en tiempos de angustia? (177)", mins: 30, editable: true },
+        { tipo: "extra", texto: "♫ 20 <b><i>Enviaste a Jesús, tu Hijo amado</i></b>" },
+        { tipo: "w",       texto: "<b>Estudio de <i>La Atalaya</i></b>: Por qué necesitamos el rescate", mins: 60 },
+        { tipo: "extra", texto: "♫ 19 <b><i>La Cena del Señor</i></b>" }
       ]
     }
   },
@@ -129,35 +129,35 @@ const TEMPAD_DATA = {
   CA: {
     nombre: "California",
     mwb: {
-      fecha: "13 mar",
+      fecha: "20 mar",
       hora: "07:00 p. m.",
       programa: [
-        { tipo: "cancion", texto: "Canción 63 <b><i>¡Soy testigo de Jehová!</i></b>" },
-        { tipo: "intro",   texto: "Palabras de introducción", mins: 1 },
-        { tipo: "tdlb",    texto: "1. Una profecía escrita dos siglos antes de su cumplimiento", mins: 10 },
+        { tipo: "extra", texto: "♫ 2 <b><i>Tu nombre es Jehová</i></b>" },
+        { tipo: "extra",   texto: "Palabras de introducción", mins: 1 },
+        { tipo: "tdlb",    texto: "1. “Yo soy Dios, y no hay nadie como yo”", mins: 10 },
         { tipo: "tdlb",    texto: "2. Busquemos perlas escondidas", mins: 10 },
         { tipo: "tdlb",    texto: "3. Lectura de la Biblia", mins: 4 },
-        { tipo: "smm",     texto: "4. Empiece conversaciones", mins: 1 },
-        { tipo: "smm",     texto: "5. Empiece conversaciones", mins: 3 },
-        { tipo: "smm",     texto: "6. Empiece conversaciones", mins: 3 },
-        { tipo: "smm",     texto: "7. Haga revisitas", mins: 4 },
-        { tipo: "intro",   texto: "Consejo", mins: 1 },
-        { tipo: "cancion", texto: "Canción 69 <b><i>Prediquen las nuevas del Reino</i></b>" },
-        { tipo: "nvc",     texto: "8. Necesidades de la congregación", mins: 15 },
+        { tipo: "smm",     texto: "4. Empiece conversaciones", mins: 3 },
+        { tipo: "smm",     texto: "5. Haga revisitas", mins: 4 },
+        { tipo: "smm",     texto: "6. Haga díscípulos", mins: 5 },
+        { tipo: "extra",   texto: "Consejo", mins: 1 },
+        { tipo: "extra", texto: "♫ 38 <b><i>Jehová te cuidará</i></b>" },
+        { tipo: "nvc",     texto: "7. Jehová es el único que siempre nos puede ayudar", mins: 7 },
+        { tipo: "nvc",     texto: "8. 2026 | <i>Informe sobre la actividad del Departamento Local de Diseño y Construcción<i>", mins: 8 },
         { tipo: "nvc",     texto: "9. Estudio bíblico de la congregación", mins: 30 },
-        { tipo: "intro",   texto: "Palabras de conclusión", mins: 3 },
-        { tipo: "cancion", texto: "Canción 137 <b><i>Fieles, valiosas, amadas</i></b>" }
+        { tipo: "extra",   texto: "Palabras de conclusión", mins: 3 },
+        { tipo: "extra", texto: "♫ 148 <b><i>Jehová es mi Roca de salvación</i></b>" }
       ]
     },
     w: {
-      fecha: "15 mar",
+      fecha: "22 mar",
       hora: "7:00 p. m.",
       programa: [
-        { tipo: "cancion", texto: "Canción 000 <b><i>---</i></b>" },
-        { tipo: "tk",      texto: "<b>Orador:</b> Título (000)", mins: 30, editable: true },
-        { tipo: "cancion", texto: "Canción 45 <b><i>La meditación de mi corazón</i></b>" },
-        { tipo: "w",       texto: "<b>Estudio de <i>La Atalaya</i></b>: Cómo vencer los sentimientos negativos", mins: 60 },
-        { tipo: "cancion", texto: "Canción 34 <b><i>Caminaré en integridad</i></b>" }
+        { tipo: "extra", texto: "♫ 000 <b><i>---</i></b>", editable: true },
+        { tipo: "tk",      texto: "<b>José Montañez:</b> ¿Qué sucederá en el futuro cercano? (40)", mins: 30, editable: true },
+        { tipo: "extra", texto: "♫ 20 <b><i>Enviaste a Jesús, tu Hijo amado</i></b>" },
+        { tipo: "w",       texto: "<b>Estudio de <i>La Atalaya</i></b>: Por qué necesitamos el rescate", mins: 60 },
+        { tipo: "extra", texto: "♫ 19 <b><i>La Cena del Señor</i></b>" }
       ]
     }
   }

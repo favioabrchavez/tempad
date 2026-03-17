@@ -161,12 +161,12 @@ tr.selected {
    👉 CAMBIA ESTE COLOR CUANDO CAMBIE LA REVISTA
 */
 .w {
-  color: #04806f;
+  color: #801816;
 }
 
 /* Introducción / conclusión / consejo (neutral) */
-.intro {
-  color: inherit;
+.extra {
+  color: #444444;
 }
 
 /* =========================
