@@ -6,6 +6,14 @@
    - Permite ajustes de tiempo en vivo
 */
 
+/* =====================================================
+   GUARD: definir initRows vacío por defecto,
+   y solo activar el temporizador si existe #timer
+   ===================================================== */
+function initRows() {}
+
+if (document.getElementById("timer")) {
+
 /* =========================
    REFERENCIAS AL DOM
    ========================= */
@@ -36,7 +44,7 @@ const ADJUST_SEC = 10;
 /* =====================================================
    INICIALIZAR FILAS (llamar después de generarlas)
    ===================================================== */
-function initRows() {
+initRows = function() {
   const rows = document.querySelectorAll("#schedule tbody tr");
 
   rows.forEach(row => {
@@ -59,13 +67,13 @@ function initRows() {
       endTimeEl.innerText   = "--:--";
 
       updateDisplay();
-      setTimerColor(1); // reset a blanco
+      setTimerColor(1);
       clearInterval(timer);
       startBtn.classList.remove("active");
       stopBtn.classList.remove("active");
     });
   });
-}
+};
 
 /* =====================================================
    BOTÓN INICIO
@@ -129,12 +137,7 @@ minusSecBtn.addEventListener("click", () => adjustSnap(-1));
 
 /* =====================================================
    COLOR GRADUAL DEL RELOJ
-   =====================================================
-   ratio = 1.0  → blanco
-   ratio = 0.25 → empieza a virar a amarillo
-   ratio = 0.0  → amarillo puro
-   ratio < 0    → rojo (tiempo excedido)
-*/
+   ===================================================== */
 function lerpColor(c1, c2, t) {
   return [
     Math.round(c1[0] + (c2[0] - c1[0]) * t),
@@ -148,7 +151,6 @@ function setTimerColor(ratio) {
 
   const white  = [255, 255, 255];
   const orange = [255, 140, 0];
-  const red    = [220, 30, 30];
 
   if (ratio >= 0.5) {
     bg        = "rgb(255,255,255)";
@@ -262,3 +264,5 @@ soloBtn.addEventListener("click", () => {
     </html>
   `);
 });
+
+} // fin del guard if (document.getElementById("timer"))

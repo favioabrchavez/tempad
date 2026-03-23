@@ -1,165 +1,99 @@
-/* =====================================================
-   TEMPAD – DATOS DE CONGREGACIONES
-   =====================================================
-   Semana: 9-15 de marzo de 2026
-   ===================================================== */
-
 const TEMPAD_DATA = {
 
   /* ─────────────────────────────────────────
-     VISTA HERMOSA (VH)
+     ENTRE SEMANA (reunión normal)
   ───────────────────────────────────────── */
-  VH: {
-    nombre: "Vista Hermosa",
-    mwb: {
-      fecha: "17 mar",
-      hora: "07:00 p. m.",
-      programa: [
-        { tipo: "extra", texto: "♫ 2 <b><i>Tu nombre es Jehová</i></b>" },
-        { tipo: "extra",   texto: "Palabras de introducción", mins: 1 },
-        { tipo: "tdlb",    texto: "1. “Yo soy Dios, y no hay nadie como yo”", mins: 10 },
-        { tipo: "tdlb",    texto: "2. Busquemos perlas escondidas", mins: 10 },
-        { tipo: "tdlb",    texto: "3. Lectura de la Biblia", mins: 4 },
-        { tipo: "smm",     texto: "4. Empiece conversaciones", mins: 3 },
-        { tipo: "smm",     texto: "5. Haga revisitas", mins: 4 },
-        { tipo: "smm",     texto: "6. Haga díscípulos", mins: 5 },
-        { tipo: "extra",   texto: "Consejo", mins: 1 },
-        { tipo: "extra", texto: "♫ 38 <b><i>Jehová te cuidará</i></b>" },
-        { tipo: "nvc",     texto: "7. Jehová es el único que siempre nos puede ayudar", mins: 7 },
-        { tipo: "nvc",     texto: "8. 2026 | <i>Informe sobre la actividad del Departamento Local de Diseño y Construcción<i>", mins: 8 },
-        { tipo: "nvc",     texto: "9. Estudio bíblico de la congregación", mins: 30 },
-        { tipo: "extra",   texto: "Palabras de conclusión", mins: 3 },
-        { tipo: "extra", texto: "♫ 148 <b><i>Jehová es mi Roca de salvación</i></b>" }
-      ]
-    },
-    w: {
-      fecha: "21 mar",
-      hora: "6:00 p. m.",
-      programa: [
-        { tipo: "extra", texto: "♫ 000 <b><i>---</i></b>", editable: true },
-        { tipo: "tk",      texto: "<b>Renzo Chávez:</b> El mundo que nos rodea prueba que Dios existe (4)", mins: 30, editable: true },
-        { tipo: "extra", texto: "♫ 20 <b><i>Enviaste a Jesús, tu Hijo amado</i></b>" },
-        { tipo: "w",       texto: "<b>Estudio de <i>La Atalaya</i></b>: Por qué necesitamos el rescate", mins: 60 },
-        { tipo: "extra", texto: "♫ 19 <b><i>La Cena del Señor</i></b>" }
-      ]
-    }
+mwb: {
+  nombre: "",
+  programa: [
+    { tipo: "extra",  texto: "♫ 89 <b><i>Jehová bendice al que escucha y obedece</i></b>" },
+    { tipo: "extra",  texto: "Palabras de introducción", mins: 1 },
+    { tipo: "tdlb",   texto: '1. Si le prestamos atención a Jehová, nos irá bien', mins: 10 },
+    { tipo: "tdlb",   texto: "2. Busquemos perlas escondidas", mins: 10 },
+    { tipo: "tdlb",   texto: "3. Lectura de la Biblia", mins: 4 },
+    { tipo: "smm",    texto: "4. Empiece conversaciones", mins: 3 },
+    { tipo: "smm",    texto: "5. Haga revisitas", mins: 4 },
+    { tipo: "smm",    texto: "6. Haga revisitas", mins: 5 },
+    { tipo: "extra",  texto: "Consejo", mins: 1 },
+    { tipo: "extra",  texto: "♫ 107 <b><i>Dios nos enseñó a amar</i></b>" },
+    { tipo: "nvc",    texto: "7. Aproveche bien el día más importante del año", mins: 15 },
+    { tipo: "nvc",    texto: "8. Estudio bíblico de la congregación", mins: 30 },
+    { tipo: "extra",  texto: "Palabras de conclusión", mins: 3 },
+    { tipo: "extra",  texto: "♫ 134 <b><i>Los hijos son un regalo de Dios</i></b>" }
+  ]
+},
+
+  w: {
+    nombre: "",
+    fecha: "21-22 mar",
+    hora: "---",
+    programa: [
+      { tipo: "extra",  texto: "♫ 146 <b><i>“Estoy haciendo todo nuevo”</i></b>", editable: true },
+      { tipo: "tk",     texto: "<b>Orador:</b> ¿Quién salvará el planeta?", mins: 30, editable: true },
+      { tipo: "extra",  texto: "♫ 18 <b><i>Gracias por el rescate</i></b>"},
+      { tipo: "w",      texto: "<b>Estudio de <i>La Atalaya</i></b>: ¿Qué hará usted para demostrar que agradece el rescate?", mins: 60 },
+      { tipo: "extra",  texto: "♫ 14 <b><i>Honremos al nuevo Rey de la Tierra</i></b>" }
+    ]
   },
 
-  /* ─────────────────────────────────────────
-     VISTA ALEGRE (VA)
-  ───────────────────────────────────────── */
-  VA: {
-    nombre: "Vista Alegre",
-    mwb: {
-      fecha: "18 mar",
-      hora: "07:00 p. m.",
-      programa: [
-        { tipo: "extra", texto: "♫ 2 <b><i>Tu nombre es Jehová</i></b>" },
-        { tipo: "extra",   texto: "Palabras de introducción", mins: 1 },
-        { tipo: "tdlb",    texto: "1. “Yo soy Dios, y no hay nadie como yo”", mins: 10 },
-        { tipo: "tdlb",    texto: "2. Busquemos perlas escondidas", mins: 10 },
-        { tipo: "tdlb",    texto: "3. Lectura de la Biblia", mins: 4 },
-        { tipo: "smm",     texto: "4. Empiece conversaciones", mins: 3 },
-        { tipo: "smm",     texto: "5. Haga revisitas", mins: 4 },
-        { tipo: "smm",     texto: "6. Haga díscípulos", mins: 5 },
-        { tipo: "extra",   texto: "Consejo", mins: 1 },
-        { tipo: "extra", texto: "♫ 38 <b><i>Jehová te cuidará</i></b>" },
-        { tipo: "nvc",     texto: "7. Jehová es el único que siempre nos puede ayudar", mins: 7 },
-        { tipo: "nvc",     texto: "8. 2026 | <i>Informe sobre la actividad del Departamento Local de Diseño y Construcción<i>", mins: 8 },
-        { tipo: "nvc",     texto: "9. Estudio bíblico de la congregación", mins: 30 },
-        { tipo: "extra",   texto: "Palabras de conclusión", mins: 3 },
-        { tipo: "extra", texto: "♫ 148 <b><i>Jehová es mi Roca de salvación</i></b>" }
-      ]
-    },
-    w: {
-      fecha: "22 mar",
-      hora: "10:00 a. m.",
-      programa: [
-        { tipo: "extra", texto: "♫ 000 <b><i>---</i></b>", editable: true },
-        { tipo: "tk",      texto: "<b>Aníbal Daga:</b> Actuemos con sabiduría en este mundo insensato (167)", mins: 30, editable: true },
-        { tipo: "extra", texto: "♫ 20 <b><i>Enviaste a Jesús, tu Hijo amado</i></b>" },
-        { tipo: "w",       texto: "<b>Estudio de <i>La Atalaya</i></b>: Por qué necesitamos el rescate", mins: 60 },
-        { tipo: "extra", texto: "♫ 19 <b><i>La Cena del Señor</i></b>" }
-      ]
-    }
+  mwb_sup: {
+    nombre: "",
+    fecha: "---",
+    hora: "07:00 p. m.",
+    programa: [
+      { tipo: "extra",  texto: "♫ 89 <b><i>Jehová bendice al que escucha y obedece</i></b>" },
+    { tipo: "extra",  texto: "Palabras de introducción", mins: 1 },
+    { tipo: "tdlb",   texto: '1. Si le prestamos atención a Jehová, nos irá bien', mins: 10 },
+    { tipo: "tdlb",   texto: "2. Busquemos perlas escondidas", mins: 10 },
+    { tipo: "tdlb",   texto: "3. Lectura de la Biblia", mins: 4 },
+    { tipo: "smm",    texto: "4. Empiece conversaciones", mins: 3 },
+    { tipo: "smm",    texto: "5. Haga revisitas", mins: 4 },
+    { tipo: "smm",    texto: "6. Haga revisitas", mins: 5 },
+    { tipo: "extra",  texto: "Consejo", mins: 1 },
+    { tipo: "extra",  texto: "♫ 107 <b><i>Dios nos enseñó a amar</i></b>" },
+    { tipo: "nvc",    texto: "7. Aproveche bien el día más importante del año", mins: 15 },
+    { tipo: "extra",  texto: "Palabras de conclusión", mins: 3 },
+    { tipo: "tk",    texto: "<b>Discurso de servicio:</b> ¿Qué está dispuesto a hacer “por las buenas noticias”?", mins: 30 },
+    { tipo: "extra",  texto: "♫ --- <b><i>---</i></b>" }
+    ]
   },
 
-  /* ─────────────────────────────────────────
-     BUENOS AIRES (BA)
-  ───────────────────────────────────────── */
-  BA: {
-    nombre: "Buenos Aires",
-    mwb: {
-      fecha: "19 mar",
-      hora: "07:00 p. m.",
-      programa: [
-        { tipo: "extra", texto: "♫ 2 <b><i>Tu nombre es Jehová</i></b>" },
-        { tipo: "extra",   texto: "Palabras de introducción", mins: 1 },
-        { tipo: "tdlb",    texto: "1. “Yo soy Dios, y no hay nadie como yo”", mins: 10 },
-        { tipo: "tdlb",    texto: "2. Busquemos perlas escondidas", mins: 10 },
-        { tipo: "tdlb",    texto: "3. Lectura de la Biblia", mins: 4 },
-        { tipo: "smm",     texto: "4. Empiece conversaciones", mins: 3 },
-        { tipo: "smm",     texto: "5. Haga revisitas", mins: 4 },
-        { tipo: "smm",     texto: "6. Haga díscípulos", mins: 5 },
-        { tipo: "extra",   texto: "Consejo", mins: 1 },
-        { tipo: "extra", texto: "♫ 38 <b><i>Jehová te cuidará</i></b>" },
-        { tipo: "nvc",     texto: "7. Jehová es el único que siempre nos puede ayudar", mins: 7 },
-        { tipo: "nvc",     texto: "8. 2026 | <i>Informe sobre la actividad del Departamento Local de Diseño y Construcción<i>", mins: 8 },
-        { tipo: "nvc",     texto: "9. Estudio bíblico de la congregación", mins: 30 },
-        { tipo: "extra",   texto: "Palabras de conclusión", mins: 3 },
-        { tipo: "extra", texto: "♫ 148 <b><i>Jehová es mi Roca de salvación</i></b>" }
-      ]
-    },
-    w: {
-      fecha: "22 mar",
-      hora: "4:00 p. m.",
-      programa: [
-        { tipo: "extra", texto: "♫ 000 <b><i>---</i></b>", editable: true },
-        { tipo: "tk",      texto: "<b>Ricardo Otiniano:</b> ¿A quién podemos acudir en tiempos de angustia? (177)", mins: 30, editable: true },
-        { tipo: "extra", texto: "♫ 20 <b><i>Enviaste a Jesús, tu Hijo amado</i></b>" },
-        { tipo: "w",       texto: "<b>Estudio de <i>La Atalaya</i></b>: Por qué necesitamos el rescate", mins: 60 },
-        { tipo: "extra", texto: "♫ 19 <b><i>La Cena del Señor</i></b>" }
-      ]
-    }
+  w_sup: {
+    nombre: "",
+    fecha: "---",
+    hora: "---",
+    programa: [
+      { tipo: "extra", texto: "♫ --- <b><i>---</i></b>", editable: true },
+      { tipo: "tk", texto: "<b>Discurso público:</b> Cómo cosechar vida eterna", mins: 30, editable: true },
+      { tipo: "extra", texto: "♫ 18 <b><i>Gracias por el rescate</i></b>", editable: true },
+      { tipo: "w", texto: "<b>Estudio de <i>La Atalaya</i></b>: ¿Qué hará usted para demostrar que agradece el rescate?", mins: 30 },
+      { tipo: "tk", texto: "<b>Discurso final:</b> Título", mins: 30, editable: true },
+      { tipo: "extra", texto: "♫ --- <b><i>---</i></b>", editable: true }
+    ]
   },
 
-  /* ─────────────────────────────────────────
-     CALIFORNIA (CA)
-  ───────────────────────────────────────── */
-  CA: {
-    nombre: "California",
-    mwb: {
-      fecha: "20 mar",
-      hora: "07:00 p. m.",
-      programa: [
-        { tipo: "extra", texto: "♫ 2 <b><i>Tu nombre es Jehová</i></b>" },
-        { tipo: "extra",   texto: "Palabras de introducción", mins: 1 },
-        { tipo: "tdlb",    texto: "1. “Yo soy Dios, y no hay nadie como yo”", mins: 10 },
-        { tipo: "tdlb",    texto: "2. Busquemos perlas escondidas", mins: 10 },
-        { tipo: "tdlb",    texto: "3. Lectura de la Biblia", mins: 4 },
-        { tipo: "smm",     texto: "4. Empiece conversaciones", mins: 3 },
-        { tipo: "smm",     texto: "5. Haga revisitas", mins: 4 },
-        { tipo: "smm",     texto: "6. Haga díscípulos", mins: 5 },
-        { tipo: "extra",   texto: "Consejo", mins: 1 },
-        { tipo: "extra", texto: "♫ 38 <b><i>Jehová te cuidará</i></b>" },
-        { tipo: "nvc",     texto: "7. Jehová es el único que siempre nos puede ayudar", mins: 7 },
-        { tipo: "nvc",     texto: "8. 2026 | <i>Informe sobre la actividad del Departamento Local de Diseño y Construcción<i>", mins: 8 },
-        { tipo: "nvc",     texto: "9. Estudio bíblico de la congregación", mins: 30 },
-        { tipo: "extra",   texto: "Palabras de conclusión", mins: 3 },
-        { tipo: "extra", texto: "♫ 148 <b><i>Jehová es mi Roca de salvación</i></b>" }
-      ]
-    },
-    w: {
-      fecha: "22 mar",
-      hora: "7:00 p. m.",
-      programa: [
-        { tipo: "extra", texto: "♫ 000 <b><i>---</i></b>", editable: true },
-        { tipo: "tk",      texto: "<b>José Montañez:</b> ¿Qué sucederá en el futuro cercano? (40)", mins: 30, editable: true },
-        { tipo: "extra", texto: "♫ 20 <b><i>Enviaste a Jesús, tu Hijo amado</i></b>" },
-        { tipo: "w",       texto: "<b>Estudio de <i>La Atalaya</i></b>: Por qué necesitamos el rescate", mins: 60 },
-        { tipo: "extra", texto: "♫ 19 <b><i>La Cena del Señor</i></b>" }
-      ]
-    }
+  otros_1: {
+    nombre: "",
+    fecha: "---",
+    hora: "---",
+    programa: [
+      { tipo: "extra",  texto: "♫ 25 <b><i>Una posesión especial</i></b>",},
+      { tipo: "tkmi",  texto: "<b>Orador:</b> Demostremos gratitud por lo que Dios y Cristo han hecho por nosotros", mins: 45},
+      { tipo: "extra",  texto: "♫ 18 <b><i>Gracias por el rescate</i></b>"}
+    ]
+  },
+
+  otros_2: {
+    nombre: "",
+    fecha: "---",
+    hora: "---",
+    programa: [
+      { tipo: "extra",  texto: "♫ --- <b><i>---</i></b>", editable: true },
+      { tipo: "extra",  texto: "Parte 1", mins: 0, editable: true },
+      { tipo: "extra",  texto: "Parte 2", mins: 0, editable: true },
+      { tipo: "extra",  texto: "Parte 3", mins: 0, editable: true },
+      { tipo: "extra",  texto: "♫ --- <b><i>---</i></b>", editable: true }
+    ]
   }
 
 };

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tempad</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="contenedor">
+    <div class="left-panel">
+      <div class="header">
+        <h1 id="current-name">--</h1>
+      </div>
+      <div id="timer">00:00</div>
+      <div class="buttons">
+        <button id="start">INICIO</button>
+        <button id="stop">PAUSA</button>
+      </div>
+      <div class="adjust-time">
+        <button id="minus-min">-1m</button>
+        <button id="minus-sec">-10s</button>
+        <button id="plus-sec">+10s</button>
+        <button id="plus-min">+1m</button>
+      </div>
+      <table class="time-table">
+        <tbody>
+          <tr><td>Inicio</td><td id="start-time">--:--</td></tr>
+          <tr><td>Fin</td><td id="end-time">--:--</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="right-panel">
+      <table id="schedule">
+        <thead><tr><th>Programa</th><th>Mins.</th></tr></thead>
+        <tbody id="program-body"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const tipo   = params.get("tipo") || "";
+    const datos  = TEMPAD_DATA[tipo];
+
+    if (datos) {
+      document.getElementById("current-name").innerHTML = datos.nombre;
+      const tbody = document.getElementById("program-body");
+
+      datos.programa.forEach(item => {
+        const tr = document.createElement("tr");
+
+        const tdNombre = document.createElement("td");
+        tdNombre.innerHTML = item.texto;
+        if (item.tipo) tdNombre.className = item.tipo;
+        if (item.editable) tdNombre.contentEditable = "true";
+        tr.appendChild(tdNombre);
+
+        if (item.mins !== undefined) {
+          const tdMins = document.createElement("td");
+          tdMins.contentEditable = "true";
+          tdMins.className = item.tipo || "";
+          tdMins.textContent = item.mins;
+          tr.appendChild(tdMins);
+        }
+
+        tbody.appendChild(tr);
+      });
+    } else {
+      document.getElementById("current-name").innerText =
+        "Programa no encontrado: " + tipo;
+    }
+
+    initRows();
+  </script>
+</body>
+</html>
