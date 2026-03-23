@@ -78,7 +78,7 @@ mwb: {
     hora: "---",
     programa: [
       { tipo: "extra",  texto: "♫ 25 <b><i>Una posesión especial</i></b>",},
-      { tipo: "tkmi",  texto: "<b>Orador:</b> Demostremos gratitud por lo que Dios y Cristo han hecho por nosotros", mins: 45},
+      { tipo: "tkmi",  texto: "<b>Orador:</b> Demostremos gratitud por lo que Dios y Cristo han hecho por nosotros", mins: 45, editable: true},
       { tipo: "extra",  texto: "♫ 18 <b><i>Gracias por el rescate</i></b>"}
     ]
   },
