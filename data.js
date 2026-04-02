@@ -28,11 +28,11 @@ mwb: {
     fecha: "21-22 mar",
     hora: "---",
     programa: [
-      { tipo: "extra",  texto: "♫ 146 <b><i>“Estoy haciendo todo nuevo”</i></b>", editable: true },
-      { tipo: "tk",     texto: "<b>Orador:</b> ¿Quién salvará el planeta?", mins: 30, editable: true },
-      { tipo: "extra",  texto: "♫ 18 <b><i>Gracias por el rescate</i></b>"},
-      { tipo: "w",      texto: "<b>Estudio de <i>La Atalaya</i></b>: ¿Qué hará usted para demostrar que agradece el rescate?", mins: 60 },
-      { tipo: "extra",  texto: "♫ 14 <b><i>Honremos al nuevo Rey de la Tierra</i></b>" }
+      { tipo: "extra",  texto: "♫ - <b><i>Canción de inicio</i></b>", editable: true },
+      { tipo: "tk",     texto: "<b>Discurso público:</b> -", mins: 30, editable: true },
+      { tipo: "extra",  texto: "♫ 76 <b><i>Cuéntame lo que sientes</i></b>"},
+      { tipo: "w",      texto: "<b>Estudio de <i>La Atalaya</i></b>: Sazonamos la verdad con palabras agradables", mins: 60 },
+      { tipo: "extra",  texto: "♫ 160 <b><i>¡Cuéntame lo que sientes!</i></b>" }
     ]
   },
 
