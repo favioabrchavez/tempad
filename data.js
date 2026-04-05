@@ -31,7 +31,7 @@ mwb: {
       { tipo: "extra",  texto: "♫ - <b><i>Canción de inicio</i></b>", editable: true },
       { tipo: "tk",     texto: "<b>Discurso público:</b> -", mins: 30, editable: true },
       { tipo: "extra",  texto: "♫ 76 <b><i>Cuéntame lo que sientes</i></b>"},
-      { tipo: "w",      texto: "<b>Estudio de <i>La Atalaya</i></b>: Sazonamos la verdad con palabras agradables", mins: 60 },
+      { tipo: "w",      texto: "<b>Estudio de <i>La Atalaya</i></b>: Sazonemos la verdad con palabras agradables", mins: 60 },
       { tipo: "extra",  texto: "♫ 160 <b><i>¡Cuéntame lo que sientes!</i></b>" }
     ]
   },
