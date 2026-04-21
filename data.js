@@ -6,20 +6,21 @@ const TEMPAD_DATA = {
   mwb: {
     nombre: "",
     programa: [
-      { tipo: "extra",  texto: "♫ 88 <b><i>Hazme conocer tus caminos</i></b>" },
+      { tipo: "extra",  texto: "♫ 86 <b><i>Necesitamos que Jehová nos enseñe</i></b>" },
       { tipo: "extra",  texto: "Palabras de introducción", mins: 1 },
-      { tipo: "tdlb",   texto: "1. Escuchemos al que fue instruido por Dios", mins: 10 },
+      { tipo: "tdlb",   texto: "1. ¿Cuánto está dispuesto a invertir?", mins: 10 },
       { tipo: "tdlb",   texto: "2. Busquemos perlas escondidas", mins: 10 },
       { tipo: "tdlb",   texto: "3. Lectura de la Biblia", mins: 4 },
-      { tipo: "smm",    texto: "4. Empiece conversaciones", mins: 3 },
-      { tipo: "smm",    texto: "5. Haga revisitas", mins: 4 },
-      { tipo: "smm",    texto: "6. Explique sus creencias", mins: 5 },
+      { tipo: "smm",    texto: "4. Empiece conversaciones", mins: 2 },
+      { tipo: "smm",    texto: "5. Empiece conversaciones", mins: 2 },
+      { tipo: "smm",    texto: "6. Haga revisitas", mins: 2 },
+      { tipo: "smm",    texto: "7. Discurso", mins: 5 },
       { tipo: "extra",  texto: "Consejo", mins: 1 },
-      { tipo: "extra",  texto: "♫ 99 <b><i>Miles de fieles hermanos</i></b>" },
-      { tipo: "nvc",    texto: "7. Necesidades de la congregación", mins: 15 },
-      { tipo: "nvc",    texto: "8. Estudio bíblico de la congregación", mins: 30 },
+      { tipo: "extra",  texto: "♫ 97 <b><i>Nuestra vida depende de la Palabra de Dios</i></b>" },
+      { tipo: "nvc",    texto: "8. Que ningún obstáculo le impida tener su estudio personal", mins: 15 },
+      { tipo: "nvc",    texto: "9. Estudio bíblico de la congregación", mins: 30 },
       { tipo: "extra",  texto: "Palabras de conclusión", mins: 3 },
-      { tipo: "extra",  texto: "♫ 13 <b><i>Cristo es nuestro modelo</i></b>" }
+      { tipo: "extra",  texto: "♫ 70 <b><i>Busquemos a los merecedores</i></b>" }
     ]
   },
 
