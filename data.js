@@ -29,9 +29,9 @@ const TEMPAD_DATA = {
     programa: [
       { tipo: "extra",  texto: "♫ - <b><i>Canción de inicio</i></b>", editable: true },
       { tipo: "tk",     texto: "<b>Discurso público:</b> -", mins: 30, editable: true },
-      { tipo: "extra",  texto: "♫ 82 <b><i>Hagamos que brille nuestra luz</i></b>"},
-      { tipo: "w",      texto: "<b>Estudio de <i>La Atalaya</i></b>: Cómo ayudar a nuestros familiares no Testigos", mins: 60 },
-      { tipo: "extra",  texto: "♫ 60 <b><i>Hay vidas en juego</i></b>" }
+      { tipo: "extra",  texto: "♫ 49 <b><i>Alegremos el corazón de Jehová</i></b>"},
+      { tipo: "w",      texto: "<b>Estudio de <i>La Atalaya</i></b>: Siga progresando hacia el bautismo", mins: 60 },
+      { tipo: "extra",  texto: "♫ 38 <b><i>Jehová te cuidará</i></b>" }
     ]
   },
 
