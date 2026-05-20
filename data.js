@@ -4,14 +4,14 @@ const TEMPAD_DATA = {
     nombre: "",
     programa: [
       { tipo: "extra",  texto: "Palabras de introducción", mins: 1 },
-      { tipo: "tdlb",   texto: "1. “Levántate, oh, mujer, despide luz”", mins: 10 },
+      { tipo: "tdlb",   texto: "1. El Alfarero nos moldea con amor y compasión", mins: 10 },
       { tipo: "tdlb",   texto: "2. Busquemos perlas escondidas", mins: 10 },
       { tipo: "tdlb",   texto: "3. Lectura de la Biblia", mins: 4 },
       { tipo: "smm",    texto: "4. Empiece conversaciones", mins: 3 },
       { tipo: "smm",    texto: "5. Haga revisitas", mins: 4 },
       { tipo: "smm",    texto: "6. Haga discípulos", mins: 5 },
       { tipo: "extra",  texto: "Consejo para estudiantes", mins: 1 },
-      { tipo: "nvc",    texto: "7. Necesidades de la congregación", mins: 15 },
+      { tipo: "nvc",    texto: "7. Preparados para las situaciones de emergencia: Esté listo para lo imprevisto", mins: 15 },
       { tipo: "nvc",    texto: "8. Estudio bíblico de la congregación", mins: 30 },
       { tipo: "extra",  texto: "Palabras de conclusión", mins: 3 }
     ]
@@ -21,7 +21,7 @@ const TEMPAD_DATA = {
     nombre: "",
     programa: [
       {tipo: "tk", texto: "<b>Discurso público</b>", mins: 30},
-      {tipo: "w", texto: "<b>Estudio de <i>La Atalaya</i></b>: Confiemos en el soberano del universo", mins: 60}
+      {tipo: "w", texto: "<b>Estudio de <i>La Atalaya</i></b>: Cómo luchar contra las distracciones", mins: 60}
     ]
   },
 
@@ -29,14 +29,14 @@ const TEMPAD_DATA = {
     nombre: "",
     programa: [
       { tipo: "extra",  texto: "Palabras de introducción", mins: 1 },
-      { tipo: "tdlb",   texto: "1. “Levántate, oh, mujer, despide luz”", mins: 10 },
+      { tipo: "tdlb",   texto: "1. El Alfarero nos moldea con amor y compasión", mins: 10 },
       { tipo: "tdlb",   texto: "2. Busquemos perlas escondidas", mins: 10 },
       { tipo: "tdlb",   texto: "3. Lectura de la Biblia", mins: 4 },
       { tipo: "smm",    texto: "4. Empiece conversaciones", mins: 3 },
       { tipo: "smm",    texto: "5. Haga revisitas", mins: 4 },
       { tipo: "smm",    texto: "6. Haga discípulos", mins: 5 },
       { tipo: "extra",  texto: "Consejo para estudiantes", mins: 1 },
-      { tipo: "nvc",    texto: "7. Necesidades de la congregación", mins: 15 },
+      { tipo: "nvc",    texto: "7. Preparados para las situaciones de emergencia: Esté listo para lo imprevisto", mins: 15 },
       { tipo: "tk",    texto: "<b>Discurso de servicio</b>", mins: 30 }
     ]
   },
@@ -45,7 +45,7 @@ const TEMPAD_DATA = {
     nombre: "",
     programa: [
       {tipo: "tk", texto: "<b>Discurso público</b>", mins: 30},
-      {tipo: "w", texto: "<b>Estudio de <i>La Atalaya</i></b>: Confiemos en el soberano del universo", mins: 60},
+      {tipo: "w", texto: "<b>Estudio de <i>La Atalaya</i></b>: Cómo luchar contra las distracciones", mins: 60},
       {tipo: "tk", texto: "<b>Discurso final</b>"}
     ]
   },
