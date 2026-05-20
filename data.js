@@ -20,7 +20,7 @@ const TEMPAD_DATA = {
   w: {
     nombre: "",
     programa: [
-      {tipo: "tk", texto: "<b>Discurso público</b>", mins: 30},
+      {tipo: "tk", texto: "Discurso público", mins: 30},
       {tipo: "w", texto: "<b>Estudio de <i>La Atalaya</i></b>: Cómo luchar contra las distracciones", mins: 60}
     ]
   },
@@ -37,16 +37,17 @@ const TEMPAD_DATA = {
       { tipo: "smm",    texto: "6. Haga discípulos", mins: 5 },
       { tipo: "extra",  texto: "Consejo para estudiantes", mins: 1 },
       { tipo: "nvc",    texto: "7. Preparados para las situaciones de emergencia: Esté listo para lo imprevisto", mins: 15 },
-      { tipo: "tk",    texto: "<b>Discurso de servicio</b>", mins: 30 }
+      { tipo: "extra",  texto: "Palabras de conclusión", mins: 3 },
+      { tipo: "tk",    texto: "Discurso de servicio", mins: 30 }
     ]
   },
 
   w_sup: {
     nombre: "",
     programa: [
-      {tipo: "tk", texto: "<b>Discurso público</b>", mins: 30},
-      {tipo: "w", texto: "<b>Estudio de <i>La Atalaya</i></b>: Cómo luchar contra las distracciones", mins: 60},
-      {tipo: "tk", texto: "<b>Discurso final</b>"}
+      {tipo: "tk", texto: "Discurso público", mins: 30},
+      {tipo: "w", texto: "<b>Estudio de <i>La Atalaya</i></b>: Cómo luchar contra las distracciones", mins: 30},
+      {tipo: "tk", texto: "Discurso final", mins: 30}
     ]
   },
 
