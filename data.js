@@ -1,4 +1,4 @@
-yoconst TEMPAD_DATA = {
+const TEMPAD_DATA = {
 
   mwb: {
     nombre: "",
