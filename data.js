@@ -1,4 +1,4 @@
-const TEMPAD_DATA = {
+yoconst TEMPAD_DATA = {
 
   mwb: {
     nombre: "",
@@ -48,7 +48,7 @@ const TEMPAD_DATA = {
     nombre: "",
     programa: [
       {tipo: "tk",  texto: "<b>Discurso público</b>", mins: 30},
-      {tipo: "w",   texto: "<b>Estudio de <i>La Atalaya</i></b>: Por qué somos felices aunque nos odien", mins: 60},
+      {tipo: "w",   texto: "<b>Estudio de <i>La Atalaya</i></b>: Por qué somos felices aunque nos odien", mins: 30},
       {tipo: "tk",  texto: "<b>Discurso final</b>", mins: 30}
     ]
   },
