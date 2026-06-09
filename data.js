@@ -41,7 +41,7 @@ const TEMPAD_DATA = {
       {tipo: "extra",texto: "Consejo para estudiantes", mins: 1},
       {tipo: "nvc",  texto: "8. Proteja su corazón de la información falsa", mins: 8},
       {tipo: "nvc",  texto: "9. Necesidades de la congregación", mins: 7},
-      {tipo: "extra",texto: "Palabras de conclusión", mins: 3}
+      {tipo: "extra",texto: "Palabras de conclusión", mins: 3},
       {tipo: "tk",   texto: "<b>Discurso de servicio</b>", mins: 30 }
     ]
   },
