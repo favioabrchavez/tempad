@@ -13,8 +13,7 @@ const TEMPAD_DATA = {
       {tipo: "extra",texto: "Consejo para estudiantes", mins: 1},
       {tipo: "nvc",  texto: "7. ¿Cómo podemos demostrar que respetamos el Salón del Reino?", mins: 5},
       {tipo: "nvc",  texto: "8. Cómo usamos las donaciones: Mantenemos nuestros Salones del Reino en buen estado", mins: 10},
-      {tipo: "nvc",  texto: "9. Necesidades de la congregación", mins: 7},
-      {tipo: "nvc",  texto: "10. Estudio bíblico de la congregación", mins: 30},
+      {tipo: "nvc",  texto: "9. Estudio bíblico de la congregación", mins: 30},
       {tipo: "extra",texto: "Palabras de conclusión", mins: 3}
     ]
   },
@@ -40,7 +39,7 @@ const TEMPAD_DATA = {
       {tipo: "extra",texto: "Consejo para estudiantes", mins: 1},
       {tipo: "nvc",  texto: "7. ¿Cómo podemos demostrar que respetamos el Salón del Reino?", mins: 5},
       {tipo: "nvc",  texto: "8. Cómo usamos las donaciones: Mantenemos nuestros Salones del Reino en buen estado", mins: 10},
-      {tipo: "nvc",  texto: "9. Necesidades de la congregación", mins: 7},
+      {tipo: "nvc",  texto: "9. Estudio bíblico de la congregación", mins: 30},
       {tipo: "extra",texto: "Palabras de conclusión", mins: 3},
       {tipo: "tk",   texto: "<b>Discurso de servicio</b>", mins: 30 }
     ]
