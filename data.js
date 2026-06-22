@@ -57,7 +57,7 @@ const TEMPAD_DATA = {
     programa: [
       {tipo: "extra", texto: "9:20 Video musical"},
       {tipo: "extra", texto: "9:30 Canción 160 y oración",},
-      {tipo: "CO1",   texto: "9:40 <b>DISCURSO DEL PRESIDENTE DE LA ASAMBLEA:</b> ¿Es realista la idea de ser felices para siempre?", mins: 29},
+      {tipo: "",   texto: "9:40 <b class="CO1">DISCURSO DEL PRESIDENTE DE LA ASAMBLEA:</b> ¿Es realista la idea de ser felices para siempre?", mins: 29},
       {tipo: "CO1",   texto: "10:10 <b>PRODUCCIÓN AUDIOVISUAL:</b> <i>Las buenas noticias según Jesús: Episodio 4<i>", mins: 29}
     ]
   },
