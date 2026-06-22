@@ -11,7 +11,7 @@ const TEMPAD_DATA = {
       {tipo: "smm",  texto: "5. Empiece conversaciones", mins: 4},
       {tipo: "smm",  texto: "6. Haga revisitas", mins: 4},
       {tipo: "extra",texto: "Consejo para estudiantes", mins: 1},
-      {tipo: "nvc",  texto: "7. <i>No nos dejemos engañar, apoyemos el Reino de Dios (Jer. 10:23)</i>", mins: 5},
+      {tipo: "nvc",  texto: "7. <i>No nos dejemos engañar, apoyemos el Reino de Dios (Jer. 10:23)</i>", mins: 15},
       {tipo: "nvc",  texto: "8. Estudio bíblico de la congregación", mins: 30},
       {tipo: "extra",texto: "Palabras de conclusión", mins: 3}
     ]
@@ -28,7 +28,7 @@ const TEMPAD_DATA = {
       {tipo: "smm",  texto: "5. Empiece conversaciones", mins: 4},
       {tipo: "smm",  texto: "6. Haga revisitas", mins: 4},
       {tipo: "extra",texto: "Consejo para estudiantes", mins: 1},
-      {tipo: "nvc",  texto: "7. <i>No nos dejemos engañar, apoyemos el Reino de Dios (Jer. 10:23)</i>", mins: 5},
+      {tipo: "nvc",  texto: "7. <i>No nos dejemos engañar, apoyemos el Reino de Dios (Jer. 10:23)</i>", mins: 15},
       {tipo: "nvc",  texto: "8. Estudio bíblico de la congregación", mins: 30},
       {tipo: "extra",texto: "Palabras de conclusión", mins: 3},
       {tipo: "tk",   texto: "<b>Discurso de servicio</b>", mins: 30 }
