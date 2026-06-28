@@ -3,77 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>tempad</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Tempad</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&family=Courier+Prime:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="contenedor">
-    <div class="left-panel">
-      <div class="header">
-        <h1 id="current-name">--</h1>
+
+  <main class="layout">
+
+    <!-- ─────────────────────────────────────
+         Panel izquierdo: Controlador
+    ───────────────────────────────────────-->
+    <section class="panel controller">
+
+      <button class="btn-solo-reloj" id="btnSoloReloj">SOLO RELOJ</button>
+
+      <div class="assignment-info" id="assignmentInfo">
+        <p class="placeholder">← Selecciona una parte del programa</p>
       </div>
-      <div id="timer">00:00</div>
-      <div class="buttons">
-        <button id="start">INICIO</button>
-        <button id="stop">PAUSA</button>
+
+      <div class="timer-box" id="timerBox">
+        <span class="timer-digits" id="timerDisplay">--:--</span>
       </div>
-      <div class="adjust-time">
-        <button id="minus-min">-1m</button>
-        <button id="minus-sec">-10s</button>
-        <button id="plus-sec">+10s</button>
-        <button id="plus-min">+1m</button>
+
+      <div class="control-row">
+        <button class="btn-main btn-start" id="btnStart" disabled>START</button>
+        <button class="btn-main btn-pause" id="btnPause" disabled>PAUSA</button>
       </div>
-      <table class="time-table">
-        <tbody>
-          <tr><td>Inicio</td><td id="start-time">--:--</td></tr>
-          <tr><td>Fin</td><td id="end-time">--:--</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="right-panel">
-      <table id="schedule">
-        <thead><tr><th>Programa</th><th>Mins.</th></tr></thead>
-        <tbody id="program-body"></tbody>
-      </table>
-    </div>
-  </div>
+
+      <div class="times-block">
+        <div class="times-header">
+          <span>INICIO</span>
+          <span>FINAL</span>
+        </div>
+        <div class="times-values">
+          <span id="displayStart">--:--</span>
+          <span id="displayEnd">--:--</span>
+        </div>
+      </div>
+
+      <div class="adjust-row">
+        <button class="btn-adjust" data-delta="-10">-10 seg.</button>
+        <button class="btn-adjust" data-delta="-60">-1 min.</button>
+        <button class="btn-adjust" data-delta="60">+1 min.</button>
+        <button class="btn-adjust" data-delta="10">+10 seg.</button>
+      </div>
+
+    </section>
+
+    <!-- ─────────────────────────────────────
+         Panel derecho: Programa
+    ───────────────────────────────────────-->
+    <section class="panel program">
+      <header class="program-header" id="programHeader">
+        <span id="programTitle">Programa</span>
+        <span>Min</span>
+      </header>
+      <div class="program-list" id="programList"></div>
+    </section>
+
+  </main>
 
   <script src="data.js"></script>
-  <script src="script.js"></script>
-  <script>
-    const params = new URLSearchParams(window.location.search);
-    const tipo   = params.get("tipo") || "";
-    const datos  = TEMPAD_DATA[tipo];
-
-    if (datos) {
-      document.getElementById("current-name").innerHTML = datos.nombre;
-      const tbody = document.getElementById("program-body");
-
-      datos.programa.forEach(item => {
-        const tr = document.createElement("tr");
-
-        const tdNombre = document.createElement("td");
-        tdNombre.innerHTML = item.texto;
-        if (item.tipo) tdNombre.className = item.tipo;
-        if (item.editable) tdNombre.contentEditable = "true";
-        tr.appendChild(tdNombre);
-
-        if (item.mins !== undefined) {
-          const tdMins = document.createElement("td");
-          tdMins.contentEditable = "true";
-          tdMins.className = item.tipo || "";
-          tdMins.textContent = item.mins;
-          tr.appendChild(tdMins);
-        }
-
-        tbody.appendChild(tr);
-      });
-    } else {
-      document.getElementById("current-name").innerText =
-        "Programa no encontrado: " + tipo;
-    }
-
-    initRows();
-  </script>
+  <script src="app.js"></script>
 </body>
 </html>

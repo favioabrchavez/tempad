@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tempad — Reloj</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="clock-screen waiting" id="clockScreen">
+    <span class="clock-digits" id="clockDigits">--:--</span>
+  </div>
+  <script>
+    const screen = document.getElementById('clockScreen');
+    const digits = document.getElementById('clockDigits');
+
+    try {
+      const ch = new BroadcastChannel('tempad_channel');
+      ch.addEventListener('message', (e) => {
+        if (e.data.type === 'TICK') {
+          screen.classList.remove('waiting');
+          digits.textContent      = e.data.timeStr;
+          screen.style.background = e.data.bg;
+          digits.style.color      = e.data.text;
+        }
+      });
+      ch.postMessage({ type: 'REQUEST_STATE' });
+    } catch (err) {
+      digits.textContent = 'Canal no disponible';
+    }
+  </script>
+</body>
+</html>
