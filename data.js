@@ -65,14 +65,20 @@ const TEMPAD_DATA = {
 
   // ── Asamblea Regional 2026 · Viernes Mañana ───────────────────────
   CO1: {
-    nombre:       "Viernes Mañana",
-    color:        "#ff852a",
-    shadingColor: "#fce5cd",
+    nombre:       "Viernes mañana",
+    color:        "#D65A00",
+    shadingColor: "#fbefe6",
     programa: [
-      { tipo: "extra", texto: "9:20 Video musical"                                                                                           },
-      { tipo: "extra", texto: "9:30 Canción 160 y oración"                                                                        },
+      { tipo: "extra", texto: "9:20 Video musical" },
+      { tipo: "extra", texto: "9:30 Canción 160 y oración" },
       { tipo: "CO",    texto: "9:40 <b>DISCURSO DEL PRESIDENTE DE LA ASAMBLEA:<b> Es realista la idea de ser felices para siempre?", mins: 29 },
-      { tipo: "CO",    texto: "10:10 <b>PRODUCCIÓN AUDIOVISUAL:</b> <i>Las buenas noticias segúnn Jesús: Episodio 4</i>",  mins: 29 }
+      { tipo: "CO",    texto: "10:10 <b>PRODUCCIÓN AUDIOVISUAL:</b> <i>Las buenas noticias según Jesús: Episodio 4</i>",  mins: 55 },
+      { tipo: "CO",    texto: "11:05 Canción 17 y anuncios"},
+      { tipo: "CO",    texto: "<b>SERIE DE DISCURSOS:<b> ¡Las profecías sobre el Mesías se cumplieron!" },
+      { tipo: "CO",    texto: "11:15 “Él mismo tomó nuestras enfermedades”", mins: 20 },
+      { tipo: "CO",    texto: "11:35 “Él mismo tomó nuestras enfermedades”", mins: 17 },
+      { tipo: "CO",    texto: "11:52 “Él mismo tomó nuestras enfermedades”", mins: 18 },
+      { tipo: "CO",    texto: "12:10 Canción 14 e intermedio"},
     ]
   },
 
