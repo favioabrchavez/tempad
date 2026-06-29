@@ -14,7 +14,7 @@ const TEMPAD_DATA = {
       {tipo: "smm",  texto: "5. Haga revisitas", mins: 4},
       {tipo: "smm",  texto: "6. Discurso", mins: 5},
       {tipo: "extra",texto: "Consejo para estudiantes", mins: 1},
-      {tipo: "nvc",  texto: "2026 | Informe 4 del Cuerpo Gobernante", mins: 15},
+      {tipo: "nvc",  texto: "<i>2026 | Informe 4 del Cuerpo Gobernante</i>", mins: 15},
       {tipo: "nvc",  texto: "8. Estudio bíblico de la congregación", mins: 30},
       {tipo: "extra",texto: "Palabras de conclusión", mins: 3}
     ]
