@@ -1,4 +1,4 @@
-2const TEMPAD_DATA = {
+const TEMPAD_DATA = {
 
   // ── Reunión Entre Semana ───────────────────────────────────────────
   mwb: {
@@ -63,17 +63,22 @@
     ]
   },
 
-  // ── Asamblea Regional 2026 · Viernes Mañana ───────────────────────
+    // ── Asamblea Regional 2026 · Viernes Mañana ───────────────────────
   CO1: {
-    nombre:       "S\u00e1bado Ma\u00f1ana",
+    nombre:       "Viernes Mañana",
     color:        "#ff852a",
     shadingColor: "#fce5cd",
-    programa: []
+    programa: [
+      { tipo: "extra", texto: "9:20 Video musical"                                                                                           },
+      { tipo: "extra", texto: "9:30 Canción 160 y oración"                                                                        },
+      { tipo: "CO",    texto: "9:40 <b>DISCURSO DEL PRESIDENTE DE LA ASAMBLEA:<b> Es realista la idea de ser felices para siempre?", mins: 29 },
+      { tipo: "CO",    texto: "10:10 <b>PRODUCCIÓN AUDIOVISUAL:</b> <i>Las buenas noticias segúnn Jesús: Episodio 4</i>",  mins: 29 }
+    ]
   },
 
   // ── Asamblea Regional 2026 · Viernes Tarde ────────────────────────
   CO2: {
-    nombre:       "S\u00e1bado Ma\u00f1ana",
+    nombre:       "Viernes Tarde",
     color:        "#ff852a",
     shadingColor: "#fce5cd",
     programa: []
