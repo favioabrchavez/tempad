@@ -90,9 +90,9 @@
     programa: [
       { tipo: "extra", texto: "00:00 Video musical" },
       { tipo: "extra", texto: "00:00 Canción 000 y oración" },
-      { tipo: "CO",    texto: "00:00 "Título", mins: 1 },
+      { tipo: "CO",    texto: "00:00 Título", mins: 1 },
       { tipo: "extra",    texto: "00:00 Canción 000 y anuncios"},
-      { tipo: "CO",    texto: "00:00 "Título", mins: 1 },
+      { tipo: "CO",    texto: "00:00 Título", mins: 1 },
       { tipo: "extra",    texto: "00:00 Canción 000 y oración"}
   },
 
