@@ -94,6 +94,7 @@
       { tipo: "extra",    texto: "00:00 Canción 000 y anuncios"},
       { tipo: "CO",    texto: "00:00 Título", mins: 1 },
       { tipo: "extra",    texto: "00:00 Canción 000 y oración"}
+    ]
   },
 
   // ── Asamblea Regional 2026 · Sábado Mañana ───────────────────────
