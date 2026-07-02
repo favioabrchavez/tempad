@@ -78,7 +78,7 @@
       { tipo: "CO",    texto: "• 11:15 “Él mismo tomó nuestras enfermedades”", mins: 18 },
       { tipo: "CO",    texto: "• 11:34 “No discutirá”", mins: 17 },
       { tipo: "CO",    texto: "• 11:52 “Nunca les hablaba sin utilizar alguna comparación”", mins: 17 },
-      { tipo: "extra",    texto: "12:10 Canción 14 e intermedio"},
+      { tipo: "extra",    texto: "12:10 Canción 14 e intermedio"}
     ]
   },
 
@@ -93,7 +93,7 @@
       { tipo: "CO",    texto: "00:00 "Título", mins: 1 },
       { tipo: "extra",    texto: "00:00 Canción 000 y anuncios"},
       { tipo: "CO",    texto: "00:00 "Título", mins: 1 },
-      { tipo: "extra",    texto: "00:00 Canción 000 e intermedio"},
+      { tipo: "extra",    texto: "00:00 Canción 000 y oración"}
   },
 
   // ── Asamblea Regional 2026 · Sábado Mañana ───────────────────────
