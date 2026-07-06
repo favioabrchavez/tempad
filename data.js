@@ -32,7 +32,7 @@ const TEMPAD_DATA = {
   },
 
   // ── Entre Semana · Visita del Superintendente ──────────────────────
-  mwb_sup: {
+  mwb_overseer: {
     nombre:       "Reunión de entre semana",
     color:        "#6b130b",
     shadingColor: "#f0e7e7",
@@ -52,7 +52,7 @@ const TEMPAD_DATA = {
   },
 
   // ── Fin de Semana · Visita del Superintendente ─────────────────────
-  w_sup: {
+  w_overseer: {
     nombre:       "Reunión del fin de semana con la visita del superintendente",
     color:        "#224680",
     shadingColor: "#e9edf2",
