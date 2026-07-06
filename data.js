@@ -3,18 +3,18 @@ const TEMPAD_DATA = {
   // ── Reunión Entre Semana ───────────────────────────────────────────
   mwb: {
     nombre:       "Reunión de entre semana",
-    color:        "#1e6ca8",
-    shadingColor: "#e9f0f6",
+    color:        "#6b130b",
+    shadingColor: "#f0e7e7",
     programa: [
      {tipo: "extra",texto: "Palabras de introducción", mins: 1},
-      {tipo: "tdlb", texto: "1. Cómo “competir en una carrera contra caballos”", mins: 10},
+      {tipo: "tdlb", texto: "1. Jehová merece que le obedezcamos", mins: 10},
       {tipo: "tdlb", texto: "2. Busquemos perlas escondidas", mins: 10},
       {tipo: "tdlb", texto: "3. Lectura de la Biblia", mins: 4},
       {tipo: "smm",  texto: "4. Empiece conversaciones", mins: 3},
       {tipo: "smm",  texto: "5. Haga revisitas", mins: 4},
       {tipo: "smm",  texto: "6. Discurso", mins: 5},
       {tipo: "extra",texto: "Consejo para estudiantes", mins: 1},
-      {tipo: "nvc",  texto: "<i>2026 | Informe 4 del Cuerpo Gobernante</i>", mins: 15},
+      {tipo: "nvc",  texto: "7. “Obedecer es mejor que ofrecer un sacrificio”", mins: 15},
       {tipo: "nvc",  texto: "8. Estudio bíblico de la congregación", mins: 30},
       {tipo: "extra",texto: "Palabras de conclusión", mins: 3}
     ]
@@ -23,29 +23,29 @@ const TEMPAD_DATA = {
   // ── Reunión Fin de Semana ──────────────────────────────────────────
   w: {
     nombre:       "Reunión del fin de semana",
-    color:        "#003d59",
-    shadingColor: "#e6ecee",
+    color:        "#224680",
+    shadingColor: "#e9edf2",
     programa: [
       {tipo: "CO",  texto: "Discurso público", mins: 30},
-      {tipo: "CO",   texto: "<b>Estudio de <i>La Atalaya</i></b>: Sigan fortaleciendo su amistad como matrimonio”", mins: 60}
+      {tipo: "CO",   texto: "<b>Estudio de <i>La Atalaya</i></b>: ¿Por qué son importantes los principios bíblicos?", mins: 60}
     ]
   },
 
   // ── Entre Semana · Visita del Superintendente ──────────────────────
   mwb_sup: {
     nombre:       "Reunión de entre semana",
-    color:        "#1e6ca8",
-    shadingColor: "#e9f0f6",
+    color:        "#6b130b",
+    shadingColor: "#f0e7e7",
     programa: [
       {tipo: "extra",texto: "Palabras de introducción", mins: 1},
-      {tipo: "tdlb", texto: "1. Cómo “competir en una carrera contra caballos”", mins: 10},
+      {tipo: "tdlb", texto: "1. Jehová merece que le obedezcamos", mins: 10},
       {tipo: "tdlb", texto: "2. Busquemos perlas escondidas", mins: 10},
       {tipo: "tdlb", texto: "3. Lectura de la Biblia", mins: 4},
       {tipo: "smm",  texto: "4. Empiece conversaciones", mins: 3},
       {tipo: "smm",  texto: "5. Haga revisitas", mins: 4},
       {tipo: "smm",  texto: "6. Discurso", mins: 5},
       {tipo: "extra",texto: "Consejo para estudiantes", mins: 1},
-      {tipo: "nvc",  texto: "<i>2026 | Informe 4 del Cuerpo Gobernante</i>", mins: 15},
+      {tipo: "nvc",  texto: "7. “Obedecer es mejor que ofrecer un sacrificio”", mins: 15},
       {tipo: "extra",texto: "Palabras de conclusión", mins: 3},
       {tipo: "CO",   texto: "<b>Discurso de servicio</b>: ¿Qué está dispuesto a hacer “por las buenas noticias”?", mins: 30 }
     ]
@@ -54,11 +54,11 @@ const TEMPAD_DATA = {
   // ── Fin de Semana · Visita del Superintendente ─────────────────────
   w_sup: {
     nombre:       "Reunión del fin de semana con la visita del superintendente",
-    color:        "#003D59",
-    shadingColor: "#e6ecee",
+    color:        "#224680",
+    shadingColor: "#e9edf2",
     programa: [
       {tipo: "CO",  texto: "Discurso público", mins: 30},
-      {tipo: "CO",   texto: "<b>Estudio de <i>La Atalaya</i></b>: Sigan fortaleciendo su amistad como matrimonio", mins: 30},
+      {tipo: "CO",   texto: "<b>Estudio de <i>La Atalaya</i></b>: ¿Por qué son importantes los principios bíblicos?", mins: 30},
       {tipo: "CO",  texto: "Discurso final", mins: 30}
     ]
   },
