@@ -26,8 +26,8 @@ const TEMPAD_DATA = {
     color:        "#224680",
     shadingColor: "#e9edf2",
     programa: [
-      {tipo: "CO",  texto: "Discurso público", mins: 30},
-      {tipo: "CO",   texto: "<b>Estudio de <i>La Atalaya</i></b>: Cómo utilizar los principios bíblicos para educar la conciencia", mins: 60}
+      {tipo: "main",  texto: "Discurso público", mins: 30},
+      {tipo: "main",   texto: "<b>Estudio de <i>La Atalaya</i></b>: Cómo utilizar los principios bíblicos para educar la conciencia", mins: 60}
     ]
   },
 
@@ -47,7 +47,7 @@ const TEMPAD_DATA = {
       {tipo: "extra",texto: "Consejo para estudiantes", mins: 1},
       {tipo: "nvc",  texto: "7. Joven, confía en los consejos de la Biblia", mins: 15},
       {tipo: "extra",texto: "Palabras de conclusión", mins: 3},
-      {tipo: "CO",   texto: "<b>Discurso de servicio</b>: ¿Qué está dispuesto a hacer “por las buenas noticias”?", mins: 30 }
+      {tipo: "main",   texto: "<b>Discurso de servicio</b>: ¿Qué está dispuesto a hacer “por las buenas noticias”?", mins: 30 }
     ]
   },
 
@@ -57,9 +57,9 @@ const TEMPAD_DATA = {
     color:        "#224680",
     shadingColor: "#e9edf2",
     programa: [
-      {tipo: "CO",  texto: "Discurso público", mins: 30},
-      {tipo: "CO",   texto: "<b>Estudio de <i>La Atalaya</i></b>: Cómo utilizar los principios bíblicos para educar la conciencia", mins: 30},
-      {tipo: "CO",  texto: "Discurso final", mins: 30}
+      {tipo: "main",  texto: "Discurso público", mins: 30},
+      {tipo: "main",   texto: "<b>Estudio de <i>La Atalaya</i></b>: Cómo utilizar los principios bíblicos para educar la conciencia", mins: 30},
+      {tipo: "main",  texto: "Discurso final", mins: 30}
     ]
   },
 
@@ -69,10 +69,11 @@ const TEMPAD_DATA = {
     color:        "#ff852a",
     shadingColor: "#fce5cd",
     programa: [
-      { tipo: "extra", texto: "9:20 Video musical"                                                                                           },
-      { tipo: "extra", texto: "9:30 Canción 160 y oración"                                                                        },
-      { tipo: "CO",    texto: "9:40 <b>DISCURSO DEL PRESIDENTE DE LA ASAMBLEA:<b> Es realista la idea de ser felices para siempre?", mins: 29 },
-      { tipo: "CO",    texto: "10:10 <b>PRODUCCIÓN AUDIOVISUAL:</b> <i>Las buenas noticias segúnn Jesús: Episodio 4</i>",  mins: 29 }
+      { tipo: "extra", texto: "9:20 Video musical"},
+      { tipo: "extra", texto: "9:30 Canción 160 y oración"},
+      { tipo: "main",    texto: "9:40 <b>DISCURSO DEL PRESIDENTE DE LA ASAMBLEA:<b> Es realista la idea de ser felices para siempre?", mins: 29 },
+      { tipo: "main",    texto: "10:10 <b>PRODUCCIÓN AUDIOVISUAL:</b> <i>Las buenas noticias según Jesús: Episodio 4</i>",  mins: 29 },
+      { tipo: "extra", texto: "11:05 Canción 17 y anuncios"},
     ]
   },
 
