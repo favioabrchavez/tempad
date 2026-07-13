@@ -7,14 +7,14 @@ const TEMPAD_DATA = {
     shadingColor: "#f0e7e7",
     programa: [
      {tipo: "extra",texto: "Palabras de introducción", mins: 1},
-      {tipo: "tdlb", texto: "1. Jehová merece que le obedezcamos", mins: 10},
+      {tipo: "tdlb", texto: "1. ¿Estamos confiando en la persona correcta?", mins: 10},
       {tipo: "tdlb", texto: "2. Busquemos perlas escondidas", mins: 10},
       {tipo: "tdlb", texto: "3. Lectura de la Biblia", mins: 4},
       {tipo: "smm",  texto: "4. Empiece conversaciones", mins: 3},
       {tipo: "smm",  texto: "5. Haga revisitas", mins: 4},
-      {tipo: "smm",  texto: "6. Discurso", mins: 5},
+      {tipo: "smm",  texto: "6. Haga discípulos", mins: 5},
       {tipo: "extra",texto: "Consejo para estudiantes", mins: 1},
-      {tipo: "nvc",  texto: "7. “Obedecer es mejor que ofrecer un sacrificio”", mins: 15},
+      {tipo: "nvc",  texto: "7. Joven, confía en los consejos de la Biblia", mins: 15},
       {tipo: "nvc",  texto: "8. Estudio bíblico de la congregación", mins: 30},
       {tipo: "extra",texto: "Palabras de conclusión", mins: 3}
     ]
@@ -27,7 +27,7 @@ const TEMPAD_DATA = {
     shadingColor: "#e9edf2",
     programa: [
       {tipo: "CO",  texto: "Discurso público", mins: 30},
-      {tipo: "CO",   texto: "<b>Estudio de <i>La Atalaya</i></b>: ¿Por qué son importantes los principios bíblicos?", mins: 60}
+      {tipo: "CO",   texto: "<b>Estudio de <i>La Atalaya</i></b>: Cómo utilizar los principios bíblicos para educar la conciencia", mins: 60}
     ]
   },
 
@@ -38,14 +38,14 @@ const TEMPAD_DATA = {
     shadingColor: "#f0e7e7",
     programa: [
       {tipo: "extra",texto: "Palabras de introducción", mins: 1},
-      {tipo: "tdlb", texto: "1. Jehová merece que le obedezcamos", mins: 10},
+      {tipo: "tdlb", texto: "1. ¿Estamos confiando en la persona correcta?", mins: 10},
       {tipo: "tdlb", texto: "2. Busquemos perlas escondidas", mins: 10},
       {tipo: "tdlb", texto: "3. Lectura de la Biblia", mins: 4},
       {tipo: "smm",  texto: "4. Empiece conversaciones", mins: 3},
       {tipo: "smm",  texto: "5. Haga revisitas", mins: 4},
-      {tipo: "smm",  texto: "6. Discurso", mins: 5},
+      {tipo: "smm",  texto: "6. Haga discípulos", mins: 5},
       {tipo: "extra",texto: "Consejo para estudiantes", mins: 1},
-      {tipo: "nvc",  texto: "7. “Obedecer es mejor que ofrecer un sacrificio”", mins: 15},
+      {tipo: "nvc",  texto: "7. Joven, confía en los consejos de la Biblia", mins: 15},
       {tipo: "extra",texto: "Palabras de conclusión", mins: 3},
       {tipo: "CO",   texto: "<b>Discurso de servicio</b>: ¿Qué está dispuesto a hacer “por las buenas noticias”?", mins: 30 }
     ]
@@ -58,7 +58,7 @@ const TEMPAD_DATA = {
     shadingColor: "#e9edf2",
     programa: [
       {tipo: "CO",  texto: "Discurso público", mins: 30},
-      {tipo: "CO",   texto: "<b>Estudio de <i>La Atalaya</i></b>: ¿Por qué son importantes los principios bíblicos?", mins: 30},
+      {tipo: "CO",   texto: "<b>Estudio de <i>La Atalaya</i></b>: Cómo utilizar los principios bíblicos para educar la conciencia", mins: 30},
       {tipo: "CO",  texto: "Discurso final", mins: 30}
     ]
   },
