@@ -73,7 +73,7 @@ const TEMPAD_DATA = {
       { tipo: "extra", texto: "9:30 Canción 160 y oración"},
       { tipo: "main",    texto: "9:40 <b>DISCURSO DEL PRESIDENTE DE LA ASAMBLEA:<b> Es realista la idea de ser felices para siempre?", mins: 29 },
       { tipo: "main",    texto: "10:10 <b>PRODUCCIÓN AUDIOVISUAL:</b> <i>Las buenas noticias según Jesús: Episodio 4</i>",  mins: 29 },
-      { tipo: "extra", texto: "11:05 Canción 17 y anuncios"},
+      { tipo: "extra", texto: "11:05 Canción 17 y anuncios"}
     ]
   },
 
