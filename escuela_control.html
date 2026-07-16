@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tempad Escuela — Control</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&family=Courier+Prime:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --font-ui: 'Google Sans','DM Sans',system-ui,sans-serif;
+  --font-timer: 'Courier Prime','Courier New',monospace;
+  --c-bg: #e8e8e8;
+  --c-panel: #ffffff;
+  --c-border: #e0e0e0;
+  --c-text: #1a1a1a;
+  --c-muted: #888888;
+  --c-accent: #1c1c1c;
+  --radius-lg: 18px;
+  --radius-md: 10px;
+  --gap: 16px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html,body{min-height:100%;font-family:var(--font-ui);background:var(--c-bg);color:var(--c-text);-webkit-font-smoothing:antialiased}
+
+.wrap{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:var(--gap);
+}
+
+.panel{
+  width:100%;
+  max-width:420px;
+  background:var(--c-panel);
+  border-radius:var(--radius-lg);
+  padding:28px;
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.eyebrow{
+  font-size:0.75rem;
+  font-weight:700;
+  letter-spacing:0.12em;
+  text-transform:uppercase;
+  color:var(--c-muted);
+  text-align:center;
+}
+
+/* ── Selector de modo ─────────────────────────── */
+.mode-row{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+
+.btn-mode{
+  padding:18px 10px;
+  border:2px solid var(--c-border);
+  border-radius:var(--radius-md);
+  background:#fff;
+  font-family:var(--font-ui);
+  font-weight:700;
+  font-size:0.95rem;
+  letter-spacing:0.05em;
+  color:var(--c-muted);
+  cursor:pointer;
+  transition:border-color .15s, background .15s, color .15s;
+}
+
+.btn-mode:hover{ border-color:var(--c-accent); }
+
+.btn-mode.active{
+  background:var(--c-accent);
+  border-color:var(--c-accent);
+  color:#fff;
+}
+
+/* ── Vista previa en vivo (mini réplica del display) ─── */
+.preview{
+  border-radius:var(--radius-md);
+  border:2px solid var(--c-border);
+  min-height:110px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#efe6d8;
+  transition:background .12s ease;
+}
+
+.preview.negative{
+  background:#000000;
+}
+
+.preview-digits{
+  font-family:var(--font-timer);
+  font-weight:700;
+  font-size:2.6rem;
+  letter-spacing:0.03em;
+  color:#000000;
+  transition:color .12s ease;
+  user-select:none;
+}
+
+.preview.negative .preview-digits{
+  color:#efe6d8;
+}
+
+/* ── Bloque configuración del temporizador ───────────── */
+.timer-config{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  max-height:0;
+  overflow:hidden;
+  opacity:0;
+  transition:max-height .2s ease, opacity .2s ease;
+}
+
+.timer-config.open{
+  max-height:220px;
+  opacity:1;
+}
+
+.field-label{
+  font-size:0.78rem;
+  font-weight:700;
+  letter-spacing:0.06em;
+  text-transform:uppercase;
+  color:var(--c-muted);
+}
+
+.time-input-row{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+input[type="time"]{
+  flex:1;
+  font-family:var(--font-timer);
+  font-size:1.4rem;
+  font-weight:700;
+  padding:10px 12px;
+  border:2px solid var(--c-border);
+  border-radius:var(--radius-md);
+  color:var(--c-text);
+  background:#fff;
+}
+
+input[type="time"]:focus{
+  outline:none;
+  border-color:var(--c-accent);
+}
+
+.status-line{
+  font-size:0.85rem;
+  color:var(--c-muted);
+  text-align:center;
+}
+
+.status-line strong{
+  color:var(--c-text);
+}
+
+/* ── Link para abrir pantalla ─────────────────── */
+.btn-open{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:14px;
+  border:none;
+  border-radius:999px;
+  background:var(--c-accent);
+  color:#fff;
+  font-family:var(--font-ui);
+  font-weight:700;
+  font-size:0.85rem;
+  letter-spacing:0.07em;
+  cursor:pointer;
+  transition:opacity .15s;
+  text-decoration:none;
+}
+
+.btn-open:hover{ opacity:.85; }
+
+@media (max-width:460px){
+  .preview-digits{ font-size:2.1rem; }
+}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <section class="panel">
+    <p class="eyebrow">Tempad — Escuela</p>
+
+    <div class="mode-row">
+      <button class="btn-mode active" id="btnHora" type="button">HORA</button>
+      <button class="btn-mode" id="btnTimer" type="button">TEMPORIZADOR</button>
+    </div>
+
+    <div class="preview" id="preview">
+      <span class="preview-digits" id="previewDigits">--:--</span>
+    </div>
+
+    <div class="timer-config" id="timerConfig">
+      <div>
+        <p class="field-label">Hora de término</p>
+        <div class="time-input-row">
+          <input type="time" id="endTimeInput" step="1">
+        </div>
+      </div>
+      <p class="status-line" id="statusLine">Define la hora final para iniciar</p>
+    </div>
+
+    <button class="btn-open" id="btnOpenDisplay" type="button">ABRIR PANTALLA</button>
+  </section>
+</div>
+
+<script>
+// ── Canal de sincronización (propio, no choca con Tempad) ───────────
+let channel = null;
+try {
+  channel = new BroadcastChannel('escuela_channel');
+} catch (err) {
+  console.warn('BroadcastChannel no disponible:', err);
+}
+
+const btnHora   = document.getElementById('btnHora');
+const btnTimer  = document.getElementById('btnTimer');
+const timerConfig = document.getElementById('timerConfig');
+const endTimeInput = document.getElementById('endTimeInput');
+const statusLine  = document.getElementById('statusLine');
+const preview     = document.getElementById('preview');
+const previewDigits = document.getElementById('previewDigits');
+const btnOpenDisplay = document.getElementById('btnOpenDisplay');
+
+let mode = 'hora'; // 'hora' | 'timer'
+let endTimestamp = null; // ms epoch, hora de término del temporizador
+let tickInterval = null;
+
+// ── Utilidades de formato ────────────────────────────────────────────
+
+// Reloj en formato 12h SIN am/pm (ej. "12:52")
+function formatClock12(ts) {
+  const d = new Date(ts);
+  let h = d.getHours() % 12;
+  if (h === 0) h = 12;
+  const m = String(d.getMinutes()).padStart(2, '0');
+  return `${h}:${m}`;
+}
+
+// Temporizador MM:SS, con signo si es negativo
+function formatTimer(ms) {
+  const neg = ms < 0;
+  const abs = Math.abs(ms);
+  const totalSec = Math.floor(abs / 1000);
+  const mins = Math.floor(totalSec / 60);
+  const secs = totalSec % 60;
+  return `${neg ? '-' : ''}${mins}:${String(secs).padStart(2, '0')}`;
+}
+
+// Convierte el valor del <input type="time"> (HH:MM) a un timestamp de HOY.
+// Si la hora ya pasó respecto a ahora, asume que es al día siguiente.
+function resolveEndTimestamp(hhmm) {
+  if (!hhmm) return null;
+  const [h, m] = hhmm.split(':').map(Number);
+  const now = new Date();
+  const end = new Date(now.getFullYear(), now.getMonth(), now.getDate(), h, m, 0, 0);
+  if (end.getTime() <= now.getTime()) {
+    end.setDate(end.getDate() + 1);
+  }
+  return end.getTime();
+}
+
+// ── Envío de estado por el canal ─────────────────────────────────────
+function broadcastState() {
+  if (!channel) return;
+
+  if (mode === 'hora') {
+    channel.postMessage({ type: 'MODE', mode: 'hora' });
+    channel.postMessage({ type: 'CLOCK_TICK', timeStr: formatClock12(Date.now()) });
+  } else {
+    if (endTimestamp === null) {
+      channel.postMessage({ type: 'MODE', mode: 'timer_idle' });
+      return;
+    }
+    const remaining = endTimestamp - Date.now();
+    channel.postMessage({
+      type: 'TIMER_TICK',
+      timeStr: formatTimer(remaining),
+      negative: remaining < 0
+    });
+  }
+}
+
+// ── Actualizar vista previa local ────────────────────────────────────
+function updatePreview() {
+  if (mode === 'hora') {
+    preview.classList.remove('negative');
+    previewDigits.textContent = formatClock12(Date.now());
+    return;
+  }
+
+  if (endTimestamp === null) {
+    preview.classList.remove('negative');
+    previewDigits.textContent = '--:--';
+    return;
+  }
+
+  const remaining = endTimestamp - Date.now();
+  previewDigits.textContent = formatTimer(remaining);
+  preview.classList.toggle('negative', remaining < 0);
+}
+
+// ── Loop de tick (cada 1s alcanza para reloj/temporizador en minutos:segundos) ──
+function startTicking() {
+  clearInterval(tickInterval);
+  tickInterval = setInterval(() => {
+    updatePreview();
+    broadcastState();
+  }, 1000);
+  updatePreview();
+  broadcastState();
+}
+
+// ── Cambiar de modo ───────────────────────────────────────────────────
+function setMode(newMode) {
+  mode = newMode;
+  btnHora.classList.toggle('active', mode === 'hora');
+  btnTimer.classList.toggle('active', mode === 'timer');
+  timerConfig.classList.toggle('open', mode === 'timer');
+
+  if (mode === 'timer' && endTimestamp !== null) {
+    statusLine.innerHTML = `Termina a las <strong>${formatClock12(endTimestamp)}</strong>`;
+  } else if (mode === 'timer') {
+    statusLine.textContent = 'Define la hora final para iniciar';
+  }
+
+  updatePreview();
+  broadcastState();
+}
+
+btnHora.addEventListener('click', () => setMode('hora'));
+btnTimer.addEventListener('click', () => setMode('timer'));
+
+// ── Input de hora final: editable en tiempo real ─────────────────────
+endTimeInput.addEventListener('input', () => {
+  const val = endTimeInput.value;
+  if (!val) {
+    endTimestamp = null;
+    statusLine.textContent = 'Define la hora final para iniciar';
+    updatePreview();
+    broadcastState();
+    return;
+  }
+  endTimestamp = resolveEndTimestamp(val);
+  statusLine.innerHTML = `Termina a las <strong>${formatClock12(endTimestamp)}</strong>`;
+  updatePreview();
+  broadcastState();
+});
+
+// ── Abrir pantalla de proyección ──────────────────────────────────────
+btnOpenDisplay.addEventListener('click', () => {
+  window.open('escuela_display.html', 'tempad_escuela_display',
+    'width=1280,height=720,menubar=no,toolbar=no,location=no,status=no');
+});
+
+// ── Responder a solicitudes de estado (cuando la pantalla se abre después) ──
+if (channel) {
+  channel.addEventListener('message', (e) => {
+    if (e.data.type === 'REQUEST_STATE') broadcastState();
+  });
+}
+
+// ── Inicializar ────────────────────────────────────────────────────────
+startTicking();
+</script>
+</body>
+</html>

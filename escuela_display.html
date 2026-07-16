@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tempad Escuela — Pantalla</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --font-timer: 'Courier Prime','Courier New',monospace;
+  --c-cream: #e8ddc9;
+  --c-cream-text: #000000;
+  --c-black: #000000;
+  --c-black-text: #e8ddc9;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html,body{
+  height:100%;
+  overflow:hidden;
+  font-family:var(--font-timer);
+  background:#000;
+}
+
+.screen{
+  display:grid;
+  grid-template-columns:55% 45%;
+  width:100vw;
+  height:100vh;
+}
+
+/* ── Panel imagen ─────────────────────────────── */
+.img-side{
+  background:#f4f1ea;
+  overflow:hidden;
+}
+.img-side img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+/* ── Panel de número (hora / temporizador) ────── */
+.num-side{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:var(--c-cream);
+  /* Cambio de color ligeramente brusco, no un fade largo */
+  transition:background .08s linear;
+}
+
+.num-side.negative{
+  background:var(--c-black);
+}
+
+.num-digits{
+  font-family:var(--font-timer);
+  font-weight:700;
+  font-size:clamp(4rem, 11vw, 9rem);
+  letter-spacing:0.02em;
+  color:var(--c-cream-text);
+  line-height:1;
+  user-select:none;
+  transition:color .08s linear;
+}
+
+.num-side.negative .num-digits{
+  color:var(--c-black-text);
+}
+
+/* Responsive: en vertical/estrecho, apilar en vez de lado a lado */
+@media (max-aspect-ratio: 4/5){
+  .screen{
+    grid-template-columns:1fr;
+    grid-template-rows:1fr 1fr;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="screen">
+  <div class="img-side">
+    <img src="escuela_hero.png" alt="" id="heroImg">
+  </div>
+  <div class="num-side" id="numSide">
+    <span class="num-digits" id="numDigits">--:--</span>
+  </div>
+</div>
+
+<script>
+const numSide   = document.getElementById('numSide');
+const numDigits = document.getElementById('numDigits');
+const heroImg   = document.getElementById('heroImg');
+
+// Si la imagen no existe todavía, no romper el layout (queda el fondo crema/negro base)
+heroImg.addEventListener('error', () => { heroImg.style.display = 'none'; });
+
+try {
+  const ch = new BroadcastChannel('escuela_channel');
+
+  ch.addEventListener('message', (e) => {
+    const data = e.data;
+
+    if (data.type === 'CLOCK_TICK') {
+      numSide.classList.remove('negative');
+      numDigits.textContent = data.timeStr;
+    }
+
+    if (data.type === 'TIMER_TICK') {
+      numDigits.textContent = data.timeStr;
+      numSide.classList.toggle('negative', data.negative);
+    }
+
+    if (data.type === 'MODE' && data.mode === 'timer_idle') {
+      numSide.classList.remove('negative');
+      numDigits.textContent = '--:--';
+    }
+  });
+
+  ch.postMessage({ type: 'REQUEST_STATE' });
+} catch (err) {
+  numDigits.textContent = 'Canal no disponible';
+}
+</script>
+</body>
+</html>
