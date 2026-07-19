@@ -174,6 +174,21 @@ const TEMPAD_DATA = {
       { tipo: "main",  texto: "2:55 “Felices los ojos de ustedes, que ven”", mins: 49},
       { tipo: "extra", texto: "3:45 Canción 163 y oración de conclusión"}
     ]
+  },
+
+  pss1: {
+    nombre:       "Domingo tarde",
+    color:        "#25231bff",
+    shadingColor: "#25231b33",
+    programa: [
+      { tipo: "extra", texto: "1:35 Video musical"},
+      { tipo: "extra", texto: "1:45 Canción 108"},
+      { tipo: "main",  texto: "1:50 <b>PRODUCCIÓN AUDIOVISUAL:</b> <i>Las buenas noticias según Jesús: Episodio 6</i>",  mins: 51 },
+      { tipo: "extra", texto: "2:35 Canción 120 y anuncios"},
+      { tipo: "main",  texto: "2:45 ¿Qué hemos aprendido?", mins: 13},
+      { tipo: "main",  texto: "2:55 “Felices los ojos de ustedes, que ven”", mins: 49},
+      { tipo: "extra", texto: "3:45 Canción 163 y oración de conclusión"}
+    ]
   }
 
 };
