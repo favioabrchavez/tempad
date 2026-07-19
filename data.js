@@ -1,10 +1,10 @@
 const TEMPAD_DATA = {
 
-  // ── Reunión Entre Semana ───────────────────────────────────────────
+  // ── Reuniones
   mwb: {
     nombre:       "Reunión de entre semana",
     color:        "#6b130b",
-    shadingColor: "#f0e7e7",
+    shadingColor: "#6b130b33",
     programa: [
      {tipo: "extra",texto: "Palabras de introducción", mins: 1},
       {tipo: "tdlb", texto: "1. ¿Estamos confiando en la persona correcta?", mins: 10},
@@ -20,22 +20,21 @@ const TEMPAD_DATA = {
     ]
   },
 
-  // ── Reunión Fin de Semana ──────────────────────────────────────────
   w: {
     nombre:       "Reunión del fin de semana",
     color:        "#224680",
-    shadingColor: "#e9edf2",
+    shadingColor: "#22468033",
     programa: [
       {tipo: "main",  texto: "Discurso público", mins: 30},
       {tipo: "main",   texto: "<b>Estudio de <i>La Atalaya</i></b>: Cómo utilizar los principios bíblicos para educar la conciencia", mins: 60}
     ]
   },
 
-  // ── Entre Semana · Visita del Superintendente ──────────────────────
+  // Visita del Superintendente
   mwb_overseer: {
     nombre:       "Reunión de entre semana",
     color:        "#6b130b",
-    shadingColor: "#f0e7e7",
+    shadingColor: "#6b130b33",
     programa: [
       {tipo: "extra",texto: "Palabras de introducción", mins: 1},
       {tipo: "tdlb", texto: "1. ¿Estamos confiando en la persona correcta?", mins: 10},
@@ -51,11 +50,10 @@ const TEMPAD_DATA = {
     ]
   },
 
-  // ── Fin de Semana · Visita del Superintendente ─────────────────────
   w_overseer: {
     nombre:       "Reunión del fin de semana con la visita del superintendente",
     color:        "#224680",
-    shadingColor: "#e9edf2",
+    shadingColor: "#22468033",
     programa: [
       {tipo: "main",  texto: "Discurso público", mins: 30},
       {tipo: "main",   texto: "<b>Estudio de <i>La Atalaya</i></b>: Cómo utilizar los principios bíblicos para educar la conciencia", mins: 30},
@@ -63,63 +61,119 @@ const TEMPAD_DATA = {
     ]
   },
 
-    // ── Asamblea Regional 2026 · Viernes Mañana ───────────────────────
+    // ── Asamblea Regional 2026
   CO1: {
-    nombre:       "Viernes Mañana",
+    nombre:       "Viernes mañana",
     color:        "#ff852a",
-    shadingColor: "#fce5cd",
+    shadingColor: "#ff852a33",
     programa: [
       { tipo: "extra", texto: "9:20 Video musical"},
       { tipo: "extra", texto: "9:30 Canción 160 y oración"},
-      { tipo: "main",    texto: "9:40 <b>DISCURSO DEL PRESIDENTE DE LA ASAMBLEA:</b> ¿Es realista la idea de ser felices para siempre?", mins: 29 },
-      { tipo: "main",    texto: "10:10 <b>PRODUCCIÓN AUDIOVISUAL:</b> <i>Las buenas noticias según Jesús: Episodio 4</i>",  mins: 29 },
+      { tipo: "main",  texto: "9:40 <b>DISCURSO DEL PRESIDENTE DE LA ASAMBLEA:</b> ¿Es realista la idea de ser felices para siempre?", mins: 29 },
+      { tipo: "main",  texto: "10:10 <b>PRODUCCIÓN AUDIOVISUAL:</b> <i>Las buenas noticias según Jesús: Episodio 4</i>",  mins: 55 },
       { tipo: "extra", texto: "11:05 Canción 17 y anuncios"},
-      { tipo: "main",    texto: "11:15 <b>SERIE DE DISCURSOS:</b> ¡Las profecías sobre el Mesías se cumplieron!"},
-      { tipo: "main",    texto: "11:15 • “Él mismo tomó nuestras enfermedades”",  mins: 18 },
-      { tipo: "main",    texto: "11:34 • “No discutirá”",  mins: 17 },
-      { tipo: "main",    texto: "11:52 • “Nunca les hablaba sin utilizar alguna comparación”",  mins: 17 },
+      { tipo: "main",  texto: "<b>SERIE DE DISCURSOS:</b> ¡Las profecías sobre el Mesías se cumplieron!"},
+      { tipo: "main",  texto: "• 11:15 “Él mismo tomó nuestras enfermedades”",  mins: 18 },
+      { tipo: "main",  texto: "• 11:34 “No discutirá”",  mins: 17 },
+      { tipo: "main",  texto: "• 11:52 “Nunca les hablaba sin utilizar alguna comparación”",  mins: 17 },
       { tipo: "extra", texto: "12:10 Canción 14 e intermedio"}
     ]
   },
 
-  // ── Asamblea Regional 2026 · Viernes Tarde ────────────────────────
   CO2: {
-    nombre:       "Viernes Tarde",
+    nombre:       "Viernes tarde",
     color:        "#ff852a",
-    shadingColor: "#fce5cd",
-    programa: []
+    shadingColor: "#ff852a33",
+    programa: [
+      { tipo: "extra", texto: "1:35 Video musical"},
+      { tipo: "extra", texto: "1:45 Canción 23"},
+      { tipo: "main",  texto: "1:50 ¿Qué enseñó Jesús sobre el sábado?", mins: 19 },
+      { tipo: "main",  texto: "<b>SERIE DE DISCURSOS:</b> Imitemos a los que sirvieron a Jesús"},
+      { tipo: "main",  texto: "• 2:10 Los apóstoles",  mins: 18 },
+      { tipo: "main",  texto: "• 2:30 Muchas mujeres",  mins: 17 },
+      { tipo: "extra", texto: "2:50 Canción 76 y anuncios"},
+      { tipo: "main",  texto: "3:00 “Felices los que lavan sus túnicas largas”", mins: 29},
+      { tipo: "extra", texto: "3:30 Canción 155 y oración de conclusión"}
+    ]
   },
 
-  // ── Asamblea Regional 2026 · Sábado Mañana ───────────────────────
   CO3: {
-    nombre:       "S\u00e1bado Ma\u00f1ana",
-    color:        "#ff852a",
-    shadingColor: "#fce5cd",
-    programa: []
+    nombre:       "Sábado mañana",
+    color:        "#03372a",
+    shadingColor: "#03372a33",
+    programa: [
+      { tipo: "extra", texto: "9:20 Video musical"},
+      { tipo: "extra", texto: "9:30 Canción 111 y oración"},
+      { tipo: "main",  texto: "9:40 “Él tomó la palabra y se puso a enseñarles”", mins: 10 },
+      { tipo: "main",  texto: "10:10 <b>PRODUCCIÓN AUDIOVISUAL:</b> <i>Las buenas noticias según Jesús: Episodio 5</i>",  mins: 31 },
+      { tipo: "extra", texto: "10:25 Canción 89 y anuncios"},
+      { tipo: "main",  texto: "10:35 Cuatro enemigos de la felicidad", mins: 14 },
+      { tipo: "main",  texto: "10:50 ¿Puede ver el principio detrás de la ley?", mins: 24 },
+      { tipo: "main",  texto: "<b>SERIE DE DISCURSOS:</b> Lecciones sobre la tierra en la que vivió Jesús"},
+      { tipo: "main",  texto: "• 11:15 La sal y la luz",  mins: 10 },
+      { tipo: "main",  texto: "• 11:26 Las plantas y los animales",  mins: 13 },
+      { tipo: "main",  texto: "11:40 <b>DISCURSO DE BAUTISMO:</b> “Tu Padre, que mira en secreto, te lo pagará”",  mins: 29 },
+      { tipo: "extra", texto: "12:10 Canción 51 e intermedio"}
+    ]
   },
 
-  // ── Asamblea Regional 2026 · Sábado Tarde ─────────────────────────
   CO4: {
-    nombre:       "S\u00e1bado Tarde",
-    color:        "#ff852a",
-    shadingColor: "#fce5cd",
-    programa: []
+    nombre:       "Sábado tarde",
+    color:        "#03372a",
+    shadingColor: "#03372a33",
+    programa: [
+      { tipo: "extra", texto: "1:35 Video musical"},
+      { tipo: "extra", texto: "1:45 Canción 23"},
+      { tipo: "main",  texto: "<b>SERIE DE DISCURSOS:</b> Felices:"},
+      { tipo: "main",  texto: "• 1:50 ... los que reconocen sus necesidades espirituales",  mins: 12 },
+      { tipo: "main",  texto: "• 2:03 ... los que se lamentan",  mins: 9 },
+      { tipo: "main",  texto: "• 2:12 ... los que son apacibles",  mins: 9 },
+      { tipo: "main",  texto: "• 2:21 ... los que tienen hambre y sed de justicia",  mins: 9 },
+      { tipo: "main",  texto: "• 2:30 ... los que son misericordiosos",  mins: 9 },
+      { tipo: "main",  texto: "• 2:39 ... los que tienen un corazón puro",  mins: 9 },
+      { tipo: "main",  texto: "• 2:49 ... los que fomentan la paz",  mins: 9 },
+      { tipo: "main",  texto: "• 2:59 ... los que han sido perseguidos por causa de la justicia",  mins: 9 },
+      { tipo: "main",  texto: "• 3:09 ... ustedes cuando la gente los insulte",  mins: 10 },
+      { tipo: "extra", texto: "3:20 Canción 81 y anuncios"},
+      { tipo: "main",  texto: "3:30 ¿Por qué se angustian?", mins: 24},
+      { tipo: "main",  texto: "3:55 “Entren por la puerta angosta”", mins: 34},
+      { tipo: "extra", texto: "4:30 Canción 21 y oración de conclusión"}
+    ]
   },
 
-  // ── Asamblea Regional 2026 · Domingo Mañana ──────────────────────
   CO5: {
-    nombre:       "Domingo Ma\u00f1ana",
-    color:        "#ff852a",
-    shadingColor: "#fce5cd",
-    programa: []
+    nombre:       "Domingo mañana",
+    color:        "#0b5394",
+    shadingColor: "#0b549433",
+    programa: [
+      { tipo: "extra", texto: "9:20 Video musical"},
+      { tipo: "extra", texto: "9:30 Canción 111 y oración"},
+      { tipo: "main",  texto: "<b>SERIE DE DISCURSOS:</b> Lecciones de las comparaciones de Jesús:"},
+      { tipo: "main",  texto: "• 9:40 Los cuatro tipos de terreno",  mins: 19 },
+      { tipo: "main",  texto: "• 10:00 El trigo y la mala hierba",  mins: 14 },
+      { tipo: "main",  texto: "• 10:15 El grano de mostaza",  mins: 13 },
+      { tipo: "main",  texto: "• 10:29 La levadura",  mins: 13 },
+      { tipo: "main",  texto: "• 10:43 La red de pesca",  mins: 16 },
+      { tipo: "extra", texto: "11:00 Canción 64 y anuncios"},
+      { tipo: "main",  texto: "11:10 <b>DISCURSO PÚBLICO:</b> ¿Ha encontrado el tesoro?", mins: 29 },
+      { tipo: "main",  texto: "11:40 Resumen de <i>La Atalaya</i>", mins: 29},
+      { tipo: "extra", texto: "12:10 Canción 140 e intermedio"}
+    ]
   },
 
-  // ── Asamblea Regional 2026 · Domingo Tarde ────────────────────────
   CO6: {
-    nombre:       "Domingo Tarde",
-    color:        "#ff852a",
-    shadingColor: "#fce5cd",
-    programa: []
+    nombre:       "Domingo tarde",
+    color:        "#0b5394",
+    shadingColor: "#0b549433",
+    programa: [
+      { tipo: "extra", texto: "1:35 Video musical"},
+      { tipo: "extra", texto: "1:45 Canción 108"},
+      { tipo: "main",  texto: "1:50 <b>PRODUCCIÓN AUDIOVISUAL:</b> <i>Las buenas noticias según Jesús: Episodio 6</i>",  mins: 51 },
+      { tipo: "extra", texto: "2:35 Canción 120 y anuncios"},
+      { tipo: "main",  texto: "2:45 ¿Qué hemos aprendido?", mins: 13},
+      { tipo: "main",  texto: "2:55 “Felices los ojos de ustedes, que ven”", mins: 49},
+      { tipo: "extra", texto: "3:45 Canción 163 y oración de conclusión"}
+    ]
   }
 
 };
