@@ -186,7 +186,7 @@ const TEMPAD_DATA = {
       { tipo: "main",  texto: "9:00 <b>Lección 1B</b> Fortalece tu amistad con Jehová", mins: 45},
       { tipo: "extra", texto: "10:15 Pausa de la mañana", mins: 15},
       { tipo: "main",  texto: "10:30 <b>Lección 2A</b> <i>La Traducción del Nuevo Mundo</i> (parte 1)", mins: 90},
-      { tipo: "extra", texto: "12:00 Pausa del medio día", mins: 60},
+      { tipo: "extra", texto: "12:00 Pausa del mediodía", mins: 60},
       { tipo: "main",  texto: "1:00 <b>Lección 2B</b> <i>La Traducción del Nuevo Mundo</i> (parte 2)", mins: 85},
       { tipo: "extra", texto: "2:25 Pausa de la tarde", mins: 15},
       { tipo: "main",  texto: "2:40 <b>Lección 3A</b> Mantente al día", mins: 80},
@@ -205,12 +205,31 @@ const TEMPAD_DATA = {
       { tipo: "main",  texto: "9:30 <b>Lección 4B</b> Interésate sinceramente por los demás", mins: 60},
       { tipo: "extra", texto: "10:30 Pausa de la mañana", mins: 15},
       { tipo: "main",  texto: "10:45 <b>Lección 5A</b> La predicación de casa en casa: el método principal para llegar a las personas", mins: 75},
-      { tipo: "extra", texto: "12:00 Pausa del medio día", mins: 60},
+      { tipo: "extra", texto: "12:00 Pausa del mediodía", mins: 60},
       { tipo: "main",  texto: "1:00 <b>Lección 5B. Taller 1</b> La predicación de casa en casa: el método principal para llegar a las personas", mins: 85},
       { tipo: "extra", texto: "2:25 Pausa de la tarde", mins: 15},
-      { tipo: "main",  texto: "2:40 <b>Lección 6A:</b> Mujeres que alegran a Jehová", mins: 80},
-      { tipo: "main",  texto: "4:00 <b>Lección 6B:</b> Repaso del día 2", mins: 35},
+      { tipo: "main",  texto: "2:40 <b>Lección 6A</b> Mujeres que alegran a Jehová", mins: 80},
+      { tipo: "main",  texto: "4:00 <b>Lección 6B</b> Repaso del día 2", mins: 35},
       { tipo: "extra", texto: "4:35 Canción 58 y oración"}
+    ]
+  },
+
+  pss3: {
+    nombre:       "Miércoles",
+    color:        "#25231bff",
+    shadingColor: "#25231b33",
+    programa: [
+      { tipo: "extra", texto: "8:20 Canción 70 y oración"},
+      { tipo: "main",  texto: "8:25 <b>Lección 7A</b> Cómo te ayudan las instrucciones y los consejos", mins: 65},
+      { tipo: "main",  texto: "9:30 <b>Lección 7B</b> Lucha contra “el espíritu del mundo”", mins: 60},
+      { tipo: "extra", texto: "10:30 Pausa de la mañana", mins: 15},
+      { tipo: "main",  texto: "10:45 <b>Lección 8A</b> Lleva una vida íntegra", mins: 75},
+      { tipo: "extra", texto: "12:00 Pausa del medio día", mins: 60},
+      { tipo: "main",  texto: "1:00 <b>Lección 8B. Participa en las diferentes formas de predicación", mins: 85},
+      { tipo: "extra", texto: "2:25 Pausa de la tarde", mins: 15},
+      { tipo: "main",  texto: "2:40 <b>Lección 9A. Taller 2</b> Participa en las diferentes formas de predicación", mins: 80},
+      { tipo: "main",  texto: "4:00 <b>Lección 9B</b> Repaso del día 3", mins: 35},
+      { tipo: "extra", texto: "4:35 Canción 57 y oración"}
     ]
   }
 
