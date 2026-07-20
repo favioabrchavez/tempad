@@ -182,16 +182,35 @@ const TEMPAD_DATA = {
     shadingColor: "#25231b33",
     programa: [
       { tipo: "extra", texto: "8:20 Canción 81 y oración"},
-      { tipo: "main",  texto: "8:25 <b>Lección 1A:</b> ¿Qué te espera en la Escuela del Servicio de Precursor?", mins: 35},
-      { tipo: "main",  texto: "9:00 <b>Lección 1B:</b> Fortalece tu amistad con Jehová", mins: 45},
+      { tipo: "main",  texto: "8:25 <b>Lección 1A</b> ¿Qué te espera en la Escuela del Servicio de Precursor?", mins: 35},
+      { tipo: "main",  texto: "9:00 <b>Lección 1B</b> Fortalece tu amistad con Jehová", mins: 45},
       { tipo: "extra", texto: "10:15 Pausa de la mañana", mins: 15},
-      { tipo: "main",  texto: "10:30 <b>Lección 2A:</b> <i>La Traducción del Nuevo Mundo</i> (parte 1)", mins: 90},
+      { tipo: "main",  texto: "10:30 <b>Lección 2A</b> <i>La Traducción del Nuevo Mundo</i> (parte 1)", mins: 90},
       { tipo: "extra", texto: "12:00 Pausa del medio día", mins: 60},
-      { tipo: "main",  texto: "1:00 <b>Lección 2B:</b> <i>La Traducción del Nuevo Mundo</i> (parte 2)", mins: 85},
+      { tipo: "main",  texto: "1:00 <b>Lección 2B</b> <i>La Traducción del Nuevo Mundo</i> (parte 2)", mins: 85},
       { tipo: "extra", texto: "2:25 Pausa de la tarde", mins: 15},
-      { tipo: "main",  texto: "2:40 <b>Lección 3A:</b> Mantente al día", mins: 80},
-      { tipo: "main",  texto: "4:00 <b>Lección 3B:</b> Repaso del día 1", mins: 35},
+      { tipo: "main",  texto: "2:40 <b>Lección 3A</b> Mantente al día", mins: 80},
+      { tipo: "main",  texto: "4:00 <b>Lección 3B</b> Repaso del día 1", mins: 35},
       { tipo: "extra", texto: "4:35 Canción 73 y oración"}
+    ]
+  },
+
+  pss2: {
+    nombre:       "Martes",
+    color:        "#25231bff",
+    shadingColor: "#25231b33",
+    programa: [
+      { tipo: "extra", texto: "8:20 Canción 67 y oración"},
+      { tipo: "main",  texto: "8:25 <b>Lección 4A</b> La soberanía de Jehová y la santificación de su nombre", mins: 65},
+      { tipo: "main",  texto: "9:30 <b>Lección 4B</b> Interésate sinceramente por los demás", mins: 60},
+      { tipo: "extra", texto: "10:30 Pausa de la mañana", mins: 15},
+      { tipo: "main",  texto: "10:45 <b>Lección 5A</b> La predicación de casa en casa: el método principal para llegar a las personas", mins: 75},
+      { tipo: "extra", texto: "12:00 Pausa del medio día", mins: 60},
+      { tipo: "main",  texto: "1:00 <b>Lección 5B. Taller 1</b> La predicación de casa en casa: el método principal para llegar a las personas", mins: 85},
+      { tipo: "extra", texto: "2:25 Pausa de la tarde", mins: 15},
+      { tipo: "main",  texto: "2:40 <b>Lección 6A:</b> Mujeres que alegran a Jehová", mins: 80},
+      { tipo: "main",  texto: "4:00 <b>Lección 6B:</b> Repaso del día 2", mins: 35},
+      { tipo: "extra", texto: "4:35 Canción 58 y oración"}
     ]
   }
 
