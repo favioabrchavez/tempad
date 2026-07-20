@@ -7,14 +7,14 @@ const TEMPAD_DATA = {
     shadingColor: "#6b130b33",
     programa: [
      {tipo: "extra",texto: "Palabras de introducción", mins: 1},
-      {tipo: "tdlb", texto: "1. ¿Estamos confiando en la persona correcta?", mins: 10},
+      {tipo: "tdlb", texto: "1. Recuperarnos en sentido espiritual es posible", mins: 10},
       {tipo: "tdlb", texto: "2. Busquemos perlas escondidas", mins: 10},
       {tipo: "tdlb", texto: "3. Lectura de la Biblia", mins: 4},
-      {tipo: "smm",  texto: "4. Empiece conversaciones", mins: 3},
+      {tipo: "smm",  texto: "4. Empiece conversaciones", mins: 4},
       {tipo: "smm",  texto: "5. Haga revisitas", mins: 4},
-      {tipo: "smm",  texto: "6. Haga discípulos", mins: 5},
+      {tipo: "smm",  texto: "6. Explque sus creencias", mins: 4},
       {tipo: "extra",texto: "Consejo para estudiantes", mins: 1},
-      {tipo: "nvc",  texto: "7. Joven, confía en los consejos de la Biblia", mins: 15},
+      {tipo: "nvc",  texto: "7. Pasos para recuperarnos en sentido espiritual", mins: 15},
       {tipo: "nvc",  texto: "8. Estudio bíblico de la congregación", mins: 30},
       {tipo: "extra",texto: "Palabras de conclusión", mins: 3}
     ]
@@ -22,11 +22,11 @@ const TEMPAD_DATA = {
 
   w: {
     nombre:       "Reunión del fin de semana",
-    color:        "#224680",
-    shadingColor: "#22468033",
+    color:        "#6C8500",
+    shadingColor: "#6C850033",
     programa: [
       {tipo: "main",  texto: "Discurso público", mins: 30},
-      {tipo: "main",   texto: "<b>Estudio de <i>La Atalaya</i></b>: Cómo utilizar los principios bíblicos para educar la conciencia", mins: 60}
+      {tipo: "main",   texto: "<b>Estudio de <i>La Atalaya</i></b>: Cómo tomar buenas decisiones sobre los estudios adicionales", mins: 60}
     ]
   },
 
@@ -37,14 +37,14 @@ const TEMPAD_DATA = {
     shadingColor: "#6b130b33",
     programa: [
       {tipo: "extra",texto: "Palabras de introducción", mins: 1},
-      {tipo: "tdlb", texto: "1. ¿Estamos confiando en la persona correcta?", mins: 10},
+      {tipo: "tdlb", texto: "1. Recuperarnos en sentido espiritual es posible", mins: 10},
       {tipo: "tdlb", texto: "2. Busquemos perlas escondidas", mins: 10},
       {tipo: "tdlb", texto: "3. Lectura de la Biblia", mins: 4},
-      {tipo: "smm",  texto: "4. Empiece conversaciones", mins: 3},
+      {tipo: "smm",  texto: "4. Empiece conversaciones", mins: 4},
       {tipo: "smm",  texto: "5. Haga revisitas", mins: 4},
-      {tipo: "smm",  texto: "6. Haga discípulos", mins: 5},
+      {tipo: "smm",  texto: "6. Explque sus creencias", mins: 4},
       {tipo: "extra",texto: "Consejo para estudiantes", mins: 1},
-      {tipo: "nvc",  texto: "7. Joven, confía en los consejos de la Biblia", mins: 15},
+      {tipo: "nvc",  texto: "7. Pasos para recuperarnos en sentido espiritual", mins: 15},
       {tipo: "extra",texto: "Palabras de conclusión", mins: 3},
       {tipo: "main",   texto: "<b>Discurso de servicio</b>: ¿Qué está dispuesto a hacer “por las buenas noticias”?", mins: 30 }
     ]
@@ -52,11 +52,11 @@ const TEMPAD_DATA = {
 
   w_overseer: {
     nombre:       "Reunión del fin de semana con la visita del superintendente",
-    color:        "#224680",
-    shadingColor: "#22468033",
+    color:        "#6C8500",
+    shadingColor: "#6C850033",
     programa: [
-      {tipo: "main",  texto: "Discurso público", mins: 30},
-      {tipo: "main",   texto: "<b>Estudio de <i>La Atalaya</i></b>: Cómo utilizar los principios bíblicos para educar la conciencia", mins: 30},
+      {tipo: "main",  texto: "<b>Discurso público:</b> Cómo cosechar vida eterna", mins: 30},
+      {tipo: "main",   texto: "<b>Estudio de <i>La Atalaya</i></b>: Cómo tomar buenas decisiones sobre los estudios adicionales", mins: 30},
       {tipo: "main",  texto: "Discurso final", mins: 30}
     ]
   },
@@ -177,7 +177,7 @@ const TEMPAD_DATA = {
   },
 
   pss1: {
-    nombre:       "Domingo tarde",
+    nombre:       "Lunes",
     color:        "#25231bff",
     shadingColor: "#25231b33",
     programa: [
