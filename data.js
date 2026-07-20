@@ -186,7 +186,7 @@ const TEMPAD_DATA = {
       { tipo: "main",  texto: "9:00 <b>Lección 1B:</b> Fortalece tu amistad con Jehová", mins: 45},
       { tipo: "extra", texto: "10:15 Pausa de la mañana", mins: 15},
       { tipo: "main",  texto: "10:30 <b>Lección 2A:</b> <i>La Traducción del Nuevo Mundo</i> (parte 1)", mins: 90},
-      { tipo: "extra", texto: "12:00 Pausa de la mañana", mins: 60},
+      { tipo: "extra", texto: "12:00 Pausa del medio día", mins: 60},
       { tipo: "main",  texto: "1:00 <b>Lección 2B:</b> <i>La Traducción del Nuevo Mundo</i> (parte 2)", mins: 85},
       { tipo: "extra", texto: "2:25 Pausa de la tarde", mins: 15},
       { tipo: "main",  texto: "2:40 <b>Lección 3A:</b> Mantente al día", mins: 80},
