@@ -181,13 +181,17 @@ const TEMPAD_DATA = {
     color:        "#25231bff",
     shadingColor: "#25231b33",
     programa: [
-      { tipo: "extra", texto: "1:35 Video musical"},
-      { tipo: "extra", texto: "1:45 Canción 108"},
-      { tipo: "main",  texto: "1:50 <b>PRODUCCIÓN AUDIOVISUAL:</b> <i>Las buenas noticias según Jesús: Episodio 6</i>",  mins: 51 },
-      { tipo: "extra", texto: "2:35 Canción 120 y anuncios"},
-      { tipo: "main",  texto: "2:45 ¿Qué hemos aprendido?", mins: 13},
-      { tipo: "main",  texto: "2:55 “Felices los ojos de ustedes, que ven”", mins: 49},
-      { tipo: "extra", texto: "3:45 Canción 163 y oración de conclusión"}
+      { tipo: "extra", texto: "8:20 Canción 81 y oración"},
+      { tipo: "main",  texto: "8:25 <b>Lección 1A:</b> ¿Qué te espera en la Escuela del Servicio de Precursor?", mins: 35},
+      { tipo: "main",  texto: "9:00 <b>Lección 1B:</b> Fortalece tu amistad con Jehová", mins: 45},
+      { tipo: "extra", texto: "10:15 Pausa de la mañana", mins: 15},
+      { tipo: "main",  texto: "10:30 <b>Lección 2A:</b> <i>La Traducción del Nuevo Mundo</i> (parte 1)", mins: 90},
+      { tipo: "extra", texto: "12:00 Pausa de la mañana", mins: 60},
+      { tipo: "main",  texto: "1:00 <b>Lección 2B:</b> <i>La Traducción del Nuevo Mundo</i> (parte 2)", mins: 85},
+      { tipo: "extra", texto: "2:25 Pausa de la tarde", mins: 15},
+      { tipo: "main",  texto: "2:40 <b>Lección 3A:</b> Mantente al día", mins: 80},
+      { tipo: "main",  texto: "4:00 <b>Lección 3B:</b> Repaso del día 1", mins: 35},
+      { tipo: "extra", texto: "4:35 Canción 73 y oración"}
     ]
   }
 
