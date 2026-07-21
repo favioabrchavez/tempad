@@ -224,12 +224,70 @@ const TEMPAD_DATA = {
       { tipo: "main",  texto: "9:30 <b>Lección 7B</b> Lucha contra “el espíritu del mundo”", mins: 60},
       { tipo: "extra", texto: "10:30 Pausa de la mañana", mins: 15},
       { tipo: "main",  texto: "10:45 <b>Lección 8A</b> Lleva una vida íntegra", mins: 75},
-      { tipo: "extra", texto: "12:00 Pausa del medio día", mins: 60},
+      { tipo: "extra", texto: "12:00 Pausa del mediodía", mins: 60},
       { tipo: "main",  texto: "1:00 <b>Lección 8B. Participa en las diferentes formas de predicación", mins: 85},
       { tipo: "extra", texto: "2:25 Pausa de la tarde", mins: 15},
       { tipo: "main",  texto: "2:40 <b>Lección 9A. Taller 2</b> Participa en las diferentes formas de predicación", mins: 80},
       { tipo: "main",  texto: "4:00 <b>Lección 9B</b> Repaso del día 3", mins: 35},
       { tipo: "extra", texto: "4:35 Canción 57 y oración"}
+    ]
+  },
+
+  pss4: {
+    nombre:       "Jueves",
+    color:        "#25231bff",
+    shadingColor: "#25231b33",
+    programa: [
+      { tipo: "extra", texto: "8:20 Canción 77 y oración"},
+      { tipo: "main",  texto: "8:25 <b>Lección 10A</b> Valora el papel de Jesús", mins: 65},
+      { tipo: "main",  texto: "9:30 <b>Lección 10B</b> Piensa en principios", mins: 60},
+      { tipo: "extra", texto: "10:30 Pausa de la mañana", mins: 15},
+      { tipo: "main",  texto: "10:45 <b>Lección 11A</b> Evalúa tu progreso como persona espiritual", mins: 75},
+      { tipo: "extra", texto: "12:00 Pausa del mediodía", mins: 60},
+      { tipo: "main",  texto: "1:00 <b>Lección 11B. Haz buenas revisitas", mins: 85},
+      { tipo: "extra", texto: "2:25 Pausa de la tarde", mins: 15},
+      { tipo: "main",  texto: "2:40 <b>Lección 12A. Taller 3</b> Haz buenas revisitas", mins: 80},
+      { tipo: "main",  texto: "4:00 <b>Lección 12B</b> Repaso del día 4", mins: 35},
+      { tipo: "extra", texto: "4:35 Canción 60 y oración"}
+    ]
+  },
+
+  pss5: {
+    nombre:       "Viernes",
+    color:        "#25231bff",
+    shadingColor: "#25231b33",
+    programa: [
+      { tipo: "extra", texto: "8:20 Canción 68 y oración"},
+      { tipo: "main",  texto: "8:25 <b>Lección 13A</b> Aprende del amo", mins: 65},
+      { tipo: "main",  texto: "9:30 <b>Lección 13B</b> Da cursos bíblicos que motiven al estudiante a progresar (parte 1)", mins: 60},
+      { tipo: "extra", texto: "10:30 Pausa de la mañana", mins: 15},
+      { tipo: "main",  texto: "10:45 <b>Lección 14A</b> Da cursos bíblicos que motiven al estudiante a progresar (parte 2)", mins: 75},
+      { tipo: "extra", texto: "12:00 Pausa del mediodía", mins: 60},
+      { tipo: "main",  texto: "1:00 <b>Lección 14B. Taller 4</b> Da cursos bíblicos que motiven al estudiante a progresar", mins: 85},
+      { tipo: "extra", texto: "2:25 Pausa de la tarde", mins: 15},
+      { tipo: "main",  texto: "2:40 <b>Lección 15A</b> Ayúdalos a ser cristianos maduros", mins: 80},
+      { tipo: "main",  texto: "4:00 <b>Lección 15B</b> Repaso del día 5", mins: 35},
+      { tipo: "extra", texto: "4:35 Canción 79 y oración"}
+    ]
+  },
+
+  pss6: {
+    nombre:       "Sábado",
+    color:        "#25231bff",
+    shadingColor: "#25231b33",
+    programa: [
+      { tipo: "extra", texto: "8:20 Canción 76 y oración"},
+      { tipo: "main",  texto: "8:25 <b>Lección 16A</b> La felicidad que viene de Jehová es tu fortaleza", mins: 65},
+      { tipo: "main",  texto: "9:30 <b>Lección 16B</b> Jehová bendice a los que confían en él", mins: 60},
+      { tipo: "extra", texto: "10:30 Pausa de la mañana", mins: 15},
+      { tipo: "main",  texto: "10:45 <b>Lección 17A</b> Nunca dejes de orar", mins: 75},
+      { tipo: "extra", texto: "12:00 Pausa del mediodía", mins: 60},
+      { tipo: "main",  texto: "1:00 <b>Lección 17B</b> Jehová da su aprobación a los que aguantan", mins: 60},
+      { tipo: "extra", texto: "2:00 Pausa de la tarde", mins: 10},
+      { tipo: "main",  texto: "2:10 <b>Lección 18</b> Comentarios finales de los estudiantes", mins: 20},
+      { tipo: "main",  texto: "2:30 <b>Discurso final.</b> Instructor B", mins: 20},
+      { tipo: "main",  texto: "2:50 <b>Discurso final.</b> Instructor A", mins: 25},
+      { tipo: "extra", texto: "Canción 84 y oración"}
     ]
   }
 
