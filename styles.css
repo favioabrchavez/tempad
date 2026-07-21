@@ -418,7 +418,7 @@ html, body {
 .dur-input:hover  { border-color: var(--c-border); background: #f5f5f5; }
 .dur-input:focus  { outline: none; border-color: var(--c-session); background: #fff; cursor: text; }
 
-/* ── Pantalla SOLO RELOJ ──────────────────────── */
+/* ── TERCERA PANTALLA ──────────────────────── */
 
 .clock-screen {
   height: 100vh;
@@ -433,7 +433,7 @@ html, body {
 .clock-digits {
   font-family: var(--font-timer);
   font-weight: 700;
-  font-size: clamp(8rem, 30vw, 28rem);
+  font-size: clamp(8rem, 34vw, 28rem);
   line-height: 1;
   letter-spacing: 0.03em;
   color: #ffffff;
