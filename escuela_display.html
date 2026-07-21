@@ -6,10 +6,10 @@
 <title>Tempad Escuela — Pantalla</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --font-timer: 'Courier Prime','Courier New',monospace;
+  --font-timer: 'Google Sans','DM Sans',system-ui,sans-serif;
   --c-cream: #e8ddc9;
   --c-cream-text: #000000;
   --c-black: #000000;
@@ -17,7 +17,7 @@
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html,body{
-  height:110%;
+  height:100%;
   overflow:hidden;
   font-family:var(--font-timer);
   background:#000;
@@ -49,7 +49,7 @@ html,body{
   justify-content:center;
   background:var(--c-cream);
   /* Cambio de color ligeramente brusco, no un fade largo */
-  transition:background 1s linear;
+  transition:background .08s linear;
 }
 
 .num-side.negative{
@@ -59,7 +59,7 @@ html,body{
 .num-digits{
   font-family:var(--font-timer);
   font-weight:700;
-  font-size:clamp(4rem, 11vw, 9rem);
+  font-size:clamp(5rem, 14vw, 11.5rem);
   letter-spacing:0.02em;
   color:var(--c-cream-text);
   line-height:1;
