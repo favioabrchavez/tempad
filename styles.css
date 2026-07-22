@@ -433,7 +433,7 @@ html, body {
 .clock-digits {
   font-family: var(--font-timer);
   font-weight: 700;
-  font-size: clamp(8rem, 34vw, 28rem);
+  font-size: clamp(8rem, 40vw, 28rem);
   line-height: 1;
   letter-spacing: 0.03em;
   color: #ffffff;
