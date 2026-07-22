@@ -225,7 +225,7 @@ const TEMPAD_DATA = {
       { tipo: "extra", texto: "10:30 Pausa de la mañana", mins: 15},
       { tipo: "main",  texto: "10:45 <b>Lección 8A</b> Lleva una vida íntegra", mins: 75},
       { tipo: "extra", texto: "12:00 Pausa del mediodía", mins: 60},
-      { tipo: "main",  texto: "1:00 <b>Lección 8B. Participa en las diferentes formas de predicación", mins: 85},
+      { tipo: "main",  texto: "1:00 <b>Lección 8B</b> Participa en las diferentes formas de predicación", mins: 85},
       { tipo: "extra", texto: "2:25 Pausa de la tarde", mins: 15},
       { tipo: "main",  texto: "2:40 <b>Lección 9A. Taller 2</b> Participa en las diferentes formas de predicación", mins: 80},
       { tipo: "main",  texto: "4:00 <b>Lección 9B</b> Repaso del día 3", mins: 35},
@@ -244,7 +244,7 @@ const TEMPAD_DATA = {
       { tipo: "extra", texto: "10:30 Pausa de la mañana", mins: 15},
       { tipo: "main",  texto: "10:45 <b>Lección 11A</b> Evalúa tu progreso como persona espiritual", mins: 75},
       { tipo: "extra", texto: "12:00 Pausa del mediodía", mins: 60},
-      { tipo: "main",  texto: "1:00 <b>Lección 11B. Haz buenas revisitas", mins: 85},
+      { tipo: "main",  texto: "1:00 <b>Lección 11B</b> Haz buenas revisitas", mins: 85},
       { tipo: "extra", texto: "2:25 Pausa de la tarde", mins: 15},
       { tipo: "main",  texto: "2:40 <b>Lección 12A. Taller 3</b> Haz buenas revisitas", mins: 80},
       { tipo: "main",  texto: "4:00 <b>Lección 12B</b> Repaso del día 4", mins: 35},
@@ -287,7 +287,7 @@ const TEMPAD_DATA = {
       { tipo: "main",  texto: "2:10 <b>Lección 18</b> Comentarios finales de los estudiantes", mins: 20},
       { tipo: "main",  texto: "2:30 <b>Discurso final.</b> Instructor B", mins: 20},
       { tipo: "main",  texto: "2:50 <b>Discurso final.</b> Instructor A", mins: 25},
-      { tipo: "extra", texto: "Canción 84 y oración"}
+      { tipo: "extra", texto: "3:15 Canción 84 y oración"}
     ]
   }
 
