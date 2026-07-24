@@ -89,8 +89,8 @@ const TEMPAD_DATA = {
       { tipo: "extra", texto: "1:45 Canción 23"},
       { tipo: "main",  texto: "1:50 ¿Qué enseñó Jesús sobre el sábado?", mins: 19 },
       { tipo: "main",  texto: "<b>SERIE DE DISCURSOS:</b> Imitemos a los que sirvieron a Jesús"},
-      { tipo: "main",  texto: "• 2:10 Los apóstoles",  mins: 18 },
-      { tipo: "main",  texto: "• 2:30 Muchas mujeres",  mins: 17 },
+      { tipo: "main",  texto: "• 2:10 Los apóstoles",  mins: 19 },
+      { tipo: "main",  texto: "• 2:30 Muchas mujeres",  mins: 19 },
       { tipo: "extra", texto: "2:50 Canción 76 y anuncios"},
       { tipo: "main",  texto: "3:00 “Felices los que lavan sus túnicas largas”", mins: 29},
       { tipo: "extra", texto: "3:30 Canción 155 y oración de conclusión"}
