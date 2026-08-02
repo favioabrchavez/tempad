@@ -1,22 +1,161 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>tempad</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tempad</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --c-bg: #612D53;
+    --c-bg-deep: #0a161e;
+    --c-paper: #f4ede0;
+    --c-gold: #DD88CF;
+    --c-gold-deep: #4B164C;
+    --c-muted: #9fb0ba;
+    --font: 'Google Sans', system-ui, sans-serif;
+  }
+  *,*::before,*::after{ box-sizing:border-box; margin:0; padding:0; }
+  html,body{
+    min-height:100%;
+    background:
+      radial-gradient(ellipse at 20% -10%, #2C2C2C 0%, transparent 95%),
+      var(--c-bg);
+    font-family:var(--font);
+    color:var(--c-paper);
+    -webkit-font-smoothing:antialiased;
+  }
+
+  .wrap{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding:48px 24px;
+    gap:40px;
+    text-align:center;
+  }
+
+
+
+  /* ── Contenido ──────────────────────────────── */
+  .eyebrow{
+    font-size:0.78rem;
+    font-weight:700;
+    letter-spacing:0.18em;
+    text-transform:uppercase;
+    color:var(--c-gold);
+  }
+
+  h1{
+    font-size:clamp(2.1rem, 6vw, 3.4rem);
+    font-weight:900;
+    letter-spacing:-0.01em;
+    line-height:1.05;
+    max-width:14ch;
+  }
+
+  .subtext{
+    max-width:34rem;
+    font-size:clamp(1.5rem, 2.4vw, 1.25rem);
+    line-height:1.65;
+    color:white;
+  }
+
+  .subtext .brand{
+    color:var(--c-paper);
+    font-weight:900;
+  }
+  .subtext .brand-accent{
+    color:var(--c-gold);
+    font-weight:900;
+  }
+
+  /* ── Tarjeta de dirección (como un remitente postal) ── */
+  .address-card{
+    background:var(--c-paper);
+    color:var(--c-bg-deep);
+    border-radius:10px;
+    padding:20px 28px;
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+    min-width:260px;
+    box-shadow:0 20px 40px -12px rgba(0,0,0,0.5);
+  }
+  .address-label{
+    font-size:0.68rem;
+    font-weight:700;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    color:var(--c-gold-deep);
+  }
+  .address-value{
+    font-size:1.15rem;
+    font-weight:700;
+    word-break:break-word;
+  }
+
+  /* ── CTA ────────────────────────────────────── */
+  .btn-cta{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:16px 34px;
+    background:var(--c-gold);
+    color:var(--c-bg-deep);
+    font-weight:700;
+    font-size:1rem;
+    letter-spacing:0.03em;
+    text-decoration:none;
+    border-radius:999px;
+    transition:transform .15s ease, background .15s ease;
+  }
+  .btn-cta:hover{
+    background:#F8E7F6;
+    transform:translateY(-2px);
+  }
+  .btn-cta .arrow{ transition:transform .15s ease; }
+  .btn-cta:hover .arrow{ transform:translateX(4px); }
+
+  .footnote{
+    font-size:0.82rem;
+    color:var(--c-muted);
+    opacity:0.75;
+  }
+
+  @media (max-width:480px){
+    .stamp{ width:120px; height:120px; }
+    .stamp-text{ font-size:0.62rem; }
+    .stamp-text strong{ font-size:0.9rem; }
+  }
+</style>
 </head>
 <body>
-  <div class="menu-page">
-    <h1 class="menu-title">tempad</h1>
-    <div class="menu-grid">
-      <a class="btn-menu" href="menu_meet.html">REUNIONES</a>
-      <a class="btn-menu" href="menu_CO.html">ASAMBLEAS</a>
-      <a class="btn-menu" href="menu_school.html">ESCUELAS</a>
-    </div>
+
+<div class="wrap">
+
+  <p class="subtext">
+    Tempad abandonó los servidores de GitHub y ahora se aloja bajo la infraestructura de
+    <span class="brand-accent">GenOne</span>. Este cambio nos permitirá integrar 
+    <span class="brand">funciones</span> más rápido y con mejor rendimiento. <br> Como guardar datos, optimizar frameworks y esas cosas que solo al CEO le emociona jaja.
+  </p>
+
+  <div class="address-card">
+    <span class="address-label">¡NUEVA DIRECCIÓN!</span>
+    <span class="address-value">genone.lat/tempad</span>
   </div>
+
+  <a class="btn-cta" href="https://genone.lat/tempad/">
+    Ir a Tempad <span class="arrow">→</span>
+  </a>
+
+  <p class="footnote">Esta URL dejará de funcionar a partir del lunes 04 de enero de 2027.</p>
+
+</div>
+
 </body>
 </html>
