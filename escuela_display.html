@@ -106,19 +106,19 @@ try {
     const data = e.data;
 
     if (data.type === 'CLOCK_TICK') {
-      numSide.classList.remove('negative');
-      numDigits.textContent = data.timeStr;
-    }
+  numSide.classList.remove('negative');
+  numDigits.textContent = data.timeStr;
+}
 
-    if (data.type === 'TIMER_TICK') {
-      numDigits.textContent = data.timeStr;
-      numSide.classList.toggle('negative', data.negative);
-    }
+if (data.type === 'TIMER_TICK') {
+  numDigits.textContent = data.timeStr;
+  numSide.classList.add('negative'); // siempre negro en modo timer
+}
 
-    if (data.type === 'MODE' && data.mode === 'timer_idle') {
-      numSide.classList.remove('negative');
-      numDigits.textContent = '--:--';
-    }
+if (data.type === 'MODE' && data.mode === 'timer_idle') {
+  numSide.classList.add('negative'); // idle también negro, sigue siendo modo timer
+  numDigits.textContent = '--:--';
+}
   });
 
   ch.postMessage({ type: 'REQUEST_STATE' });
