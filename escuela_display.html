@@ -48,8 +48,7 @@ html,body{
   align-items:center;
   justify-content:center;
   background:var(--c-cream);
-  /* Cambio de color ligeramente brusco, no un fade largo */
-  transition:background 1s linear;
+  /* sin transición */
 }
 
 .num-side.negative{
@@ -57,14 +56,11 @@ html,body{
 }
 
 .num-digits{
-  font-family:var(--font-timer);
-  font-weight:700;
-  font-size:clamp(5rem, 14vw, 11.5rem);
-  letter-spacing:0.02em;
+  ...
   color:var(--c-cream-text);
   line-height:1;
   user-select:none;
-  transition:color .08s linear;
+  /* sin transición */
 }
 
 .num-side.negative .num-digits{
