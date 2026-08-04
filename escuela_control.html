@@ -308,15 +308,16 @@ function updatePreview() {
     return;
   }
 
+  // modo timer: siempre negro, con o sin endTimestamp
+  preview.classList.add('negative');
+
   if (endTimestamp === null) {
-    preview.classList.remove('negative');
     previewDigits.textContent = '--:--';
     return;
   }
 
   const remaining = endTimestamp - Date.now();
   previewDigits.textContent = formatTimer(remaining);
-  preview.classList.toggle('negative', remaining < 0);
 }
 
 // ── Loop de tick (cada 1s alcanza para reloj/temporizador en minutos:segundos) ──
