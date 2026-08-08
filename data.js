@@ -285,7 +285,7 @@ const TEMPAD_DATA = {
       { tipo: "main",  texto: "1:00 <b>Lección 17B</b> Jehová da su aprobación a los que aguantan", mins: 60},
       { tipo: "extra", texto: "2:00 Pausa de la tarde", mins: 10},
       { tipo: "main",  texto: "2:10 <b>Lección 18</b> Comentarios finales de los estudiantes", mins: 20},
-      { tipo: "main",  texto: "2:30 <b>Discurso final.</b> Instructor B", mins: 20},
+      { tipo: "main",  texto: "2:30 <b>Discurso final</b> Instructor B: Cómo demostrar amor a las personas", mins: 20},
       { tipo: "main",  texto: "2:50 <b>Discurso final.</b> Instructor A", mins: 25},
       { tipo: "extra", texto: "3:15 Canción 84 y oración"}
     ]
